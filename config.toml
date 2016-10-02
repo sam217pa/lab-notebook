@@ -1,0 +1,42 @@
+publishdir = "public"
+canonifyurls = true
+baseurl = ""
+theme = "hugo-tufte"
+title = "Lab notebook"
+
+[author]
+  name = "Samuel Barreto"
+  homepage = "https://www.sam217pa.github.io"
+
+[taxonomies]
+  category = "categories"
+  group = "groups"
+  series = "series"
+  tag = "tags"
+
+[params]
+  subtitle = "Samuel Barreto"
+  copyrightHolder = "Samuel Barreto"
+  showPoweredBy = false
+
+# -----------------------------------------------------------------------
+# Navigation menu
+# -----------------------------------------------------------------------
+[[menu.nav]]
+  name = "Récents"
+  pre = "<i class='fa fa-home fa-lg'></i> "
+  weight = -110
+  identifier = "home"
+  url = "/"
+[[menu.nav]]
+  name = "Par date"
+  pre = "<i class='fa fa-book fa-lg'></i> "
+  weight = -100
+  identifier = "posts"
+  url = "/post"
+[[menu.nav]]
+  name = "Catégories"
+  pre = "<i class='fa fa-tags fa-lg'></i> "
+  weight = -90
+  identifier = "categories"
+  url = "/categories"
