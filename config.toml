@@ -1,12 +1,12 @@
 publishdir = "public"
 canonifyurls = true
-baseurl = ""
+baseurl = "https://sam217pa.github.io/lab-notebook/"
 theme = "hugo-tufte"
 title = "Lab notebook"
 
 [author]
   name = "Samuel Barreto"
-  homepage = "https://www.sam217pa.github.io"
+  homepage = "https://sam217pa.github.io"
 
 [taxonomies]
   category = "categories"
