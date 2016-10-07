@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="tablesaw-enhanced" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+    <title>Lab notebook - Compte-rendu réunion du 03 octobre</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Lab notebook">
+<meta name="generator" content="Hugo 0.16" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/envisioned.css">
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/tablesaw-stackonly.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/nudge.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/hugo-envisioned.css">
+
+</head>
+
+
+<body>
+    <div id="layout">
+        <article>
+            <header class="brand">
+    <h1>Lab notebook</h1>
+    <h2>Samuel Barreto</h2>
+    <div class="menu-btn">+</div>
+    <nav class="pushy pushy-left">
+    <ul>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/"><i class='fa fa-home fa-lg'></i> Récents</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/post"><i class='fa fa-book fa-lg'></i> Par date</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/categories"><i class='fa fa-tags fa-lg'></i> Catégories</a></li>
+        
+    </ul>
+</nav>
+<div class="site-overlay"></div>
+
+</header>
+
+            
+<h1>
+    
+    <a href="https://sam217pa.github.io/lab-notebook/post/2016-10-04/">Compte-rendu réunion du 03 octobre</a>
+    
+</h1>
+
+
+<span class="content-meta">
+    
+    <i class="fa fa-user">&nbsp;</i><span class="author">
+        &nbsp;Samuel Barreto</span> <br>
+    
+
+
+    
+    <i class="fa fa-calendar"></i>
+    &nbsp;Oct 4, 2016
+    
+
+    
+    &nbsp;<i class="fa fa-clock-o"></i>
+    &nbsp;4 min read
+    
+
+    
+    <br>
+    <i class="fa fa-tags"> </i>
+    
+    <a  href="https://sam217pa.github.io/categories/reunion">reunion</a>
+    
+    <a  href="https://sam217pa.github.io/categories/compte-rendu">compte-rendu</a>
+    
+    <a  href="https://sam217pa.github.io/categories/meta">meta</a>
+    
+    <a  href="https://sam217pa.github.io/categories/approches">approches</a>
+    
+    
+</span>
+
+
+
+
+            
+
+            <section><p>Ordre du jour : discuter des stratégies pour mesurer le BGC <em>in-vitro</em>.</p>
+
+<p>La stratégie Sanger a permis de déterminer la distribution des points de cassure, d&rsquo;avoir une idée approximative de l&rsquo;intensité du biais à laquelle on peut s&rsquo;attendre<label for="error: cannot access positional params by string name" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="error: cannot access positional params by string name" class="margin-toggle"/>
+<span class="sidenote">C&rsquo;est à dire faible, à priori.</span> 
+, mais elle ne permet pas d&rsquo;atteindre la puissance suffisante.</p>
+
+<p>On veut donc partir sur une stratégie en NGS.</p>
+
+<p><span class="newthought">L&rsquo;école centrale</span>
+ à Écully dispose
+d&rsquo;un séquenceur MiSeq Illumina à 40 - 50€ le run de 2 x 300. Ce sont
+les mêmes prix que ceux pratiqués par Mr DNA. On a une interlocutrice
+là-bas avec qui discuter de la meilleure façon de préparer la
+librairie. Le problème de la faible divergence de nos séquences est
+résolu puisqu&rsquo;ils seront mélangés à des séquences tierces. La
+diversité dans la flow-cell sera donc suffisante.</p>
+
+<p>À ce prix, on peut envisager une manip&rsquo; préliminaire qui donnerait une
+idée de ce à quoi on peut s&rsquo;attendre en NGS ; préliminaire à une
+manip&rsquo; qui s&rsquo;effectuerait avec des reads taggés.</p>
+
+<p>Une question qui reste pour l&rsquo;instant en suspens : est-ce que les
+reads en paired-end doivent être chevauchants ou non ? Est-ce qu&rsquo;on
+peut laisser un gap entre les extrémités de la séquence ? S&rsquo;il faut
+nécessairement que les reads soient chevauchants (50 bp), on peut
+réfléchir à une stratégie en coupant éventuellement les fragments en 2
+avec des enzymes de restriction par exemple.</p>
+
+<p><span class="newthought">Pour les manips</span>
+, on envisage
+d&rsquo;adapter le protocole pour obtenir non plus 3000 transformants mais
+100 000. L&rsquo;idée est que si le nombre de génomes est en large excès par
+rapport au nombre de transformants effectivement séquencés, on
+diminue la probabilité que deux transformants séquencés soient des
+clones identiques.</p>
+
+<p>À l&rsquo;issue de la transformation, les produits de transformations seront
+étalés sur LB + kanamycine, 500µL sur boîtes de 120mm, avec un plus grand
+nombre de boîte <label for="error: cannot access positional params by string name" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="error: cannot access positional params by string name" class="margin-toggle"/>
+<span class="sidenote">Incluant des réplicats biologiques ?</span> 
+.
+Après 24h de culture, les boîtes seront raclées, et l&rsquo;ADN total extrait, le locus amplifié par PCR
+et les amplicons obtenus séquencés.</p>
+
+<p><span class="newthought">Dans un second temps</span>
+, il faudra concevoir les gènes de synthèse incluant des flags.
+La société GeneWiz basée à Londres propose des tarifs avantageux par rapport à Thermo-fischer, il faudra discuter avec eux du prix (devis pour les séquences de synthèse entière + flag). Ce flag permettra de discriminer les clones les uns des autres, et d&rsquo;être sûr après séquençage de n&rsquo;analyser que des reads issus de clones différents.</p>
+
+<p>Un problème non résolu est que la longueur maximale de séquençage sera
+comprise entre 0 et 600bp, alors que notre locus d&rsquo;intérêt mesure
+800bp. On a brièvement mentionné le minION de Oxford Nanopore, qui
+permettrait de séquencer les reads en entier. Pour l&rsquo;instant, le taux
+d&rsquo;erreur semble trop élevé pour notre intérêt. Il existe un groupe de
+travail au BBE sur le thème NGS, et Gabriel Marais a un projet en
+lien.</p>
+
+<p><span class="newthought">Notre approche</span>
+ est locus
+dépendante. Bubendorfer <em>et al</em> ont utilisé la transformation à
+l&rsquo;échelle du génome entier chez <em>H.pylori</em>. On peut éventuellement s&rsquo;inspirer de leur protocole.</p>
+
+<p>Ils ont deux types de protocole. Un protocole où une souche receveuse est incubée en présence d&rsquo;un excès d&rsquo;ADN d&rsquo;une souche donneuse divergente de la receveuse à 4.5%<label for="error: cannot access positional params by string name" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="error: cannot access positional params by string name" class="margin-toggle"/>
+<span class="sidenote">Un polymorphisme toutes les 22bp.</span> 
+, et la manip est répétée sur 50 jours, à l&rsquo;issue desquelles 20 clones ont été séquencés en short-reads. Le second protocole implique une sélection de l&rsquo;intégration d&rsquo;une cassette de résistance par culture sur milieu + antibiotique comme nous. Au bout d&rsquo;une génération, 20 clones sont WGS.</p>
+
+<p>Dans un premier temps, on veut estimer le nombre de positions de marqueurs qu&rsquo;ils ont pu analyser en séquençant 20 génomes entiers, ainsi que le coût associé.</p>
+
+<p>Dans un second temps et si l&rsquo;estimation paraît favorable, on peut creuser leurs données et faire nos &ldquo;<a href="http://simplystatistics.org/2016/01/25/on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/">reasearch parasites</a>&rdquo;, pour voir si leurs marqueurs ne montreraient pas par hasard un biais quelconque.</p>
+</section>
+            <section>
+                
+
+                <footer class="footer">
+		<hr>
+		<ul class="page-footer-menu">
+		    
+		</ul>
+
+    
+
+	  <div class="copyright">
+	      <p>
+            
+            &copy; 2016
+            Samuel Barreto.
+            
+        </p>
+    </div>
+</footer>
+
+
+<script src="https://sam217pa.github.io/lab-notebook/js/jquery.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/tablesaw-stackonly.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/nudge.min.js"></script> 
+
+            </section>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reunion on Lab notebook</title>
+    <link>https://sam217pa.github.io/lab-notebook/categories/reunion/</link>
+    <description>Recent content in Reunion on Lab notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 04 Oct 2016 17:55:08 +0200</lastBuildDate>
+    <atom:link href="https://sam217pa.github.io/lab-notebook/categories/reunion/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Compte-rendu réunion du 03 octobre</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-10-04/</link>
+      <pubDate>Tue, 04 Oct 2016 17:55:08 +0200</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-04/</guid>
+      <description>&lt;p&gt;Ordre du jour : discuter des stratégies pour mesurer le BGC &lt;em&gt;in-vitro&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;La stratégie Sanger a permis de déterminer la distribution des points de cassure, d&amp;rsquo;avoir une idée approximative de l&amp;rsquo;intensité du biais à laquelle on peut s&amp;rsquo;attendre&lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;C&amp;rsquo;est à dire faible, à priori.&lt;/span&gt; 
+, mais elle ne permet pas d&amp;rsquo;atteindre la puissance suffisante.&lt;/p&gt;
+
+&lt;p&gt;On veut donc partir sur une stratégie en NGS.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;L&amp;rsquo;école centrale&lt;/span&gt;
+ à Écully dispose
+d&amp;rsquo;un séquenceur MiSeq Illumina à 40 - 50€ le run de 2 x 300. Ce sont
+les mêmes prix que ceux pratiqués par Mr DNA. On a une interlocutrice
+là-bas avec qui discuter de la meilleure façon de préparer la
+librairie. Le problème de la faible divergence de nos séquences est
+résolu puisqu&amp;rsquo;ils seront mélangés à des séquences tierces. La
+diversité dans la flow-cell sera donc suffisante.&lt;/p&gt;
+
+&lt;p&gt;À ce prix, on peut envisager une manip&amp;rsquo; préliminaire qui donnerait une
+idée de ce à quoi on peut s&amp;rsquo;attendre en NGS ; préliminaire à une
+manip&amp;rsquo; qui s&amp;rsquo;effectuerait avec des reads taggés.&lt;/p&gt;
+
+&lt;p&gt;Une question qui reste pour l&amp;rsquo;instant en suspens : est-ce que les
+reads en paired-end doivent être chevauchants ou non ? Est-ce qu&amp;rsquo;on
+peut laisser un gap entre les extrémités de la séquence ? S&amp;rsquo;il faut
+nécessairement que les reads soient chevauchants (50 bp), on peut
+réfléchir à une stratégie en coupant éventuellement les fragments en 2
+avec des enzymes de restriction par exemple.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Pour les manips&lt;/span&gt;
+, on envisage
+d&amp;rsquo;adapter le protocole pour obtenir non plus 3000 transformants mais
+100 000. L&amp;rsquo;idée est que si le nombre de génomes est en large excès par
+rapport au nombre de transformants effectivement séquencés, on
+diminue la probabilité que deux transformants séquencés soient des
+clones identiques.&lt;/p&gt;
+
+&lt;p&gt;À l&amp;rsquo;issue de la transformation, les produits de transformations seront
+étalés sur LB + kanamycine, 500µL sur boîtes de 120mm, avec un plus grand
+nombre de boîte &lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;Incluant des réplicats biologiques ?&lt;/span&gt; 
+.
+Après 24h de culture, les boîtes seront raclées, et l&amp;rsquo;ADN total extrait, le locus amplifié par PCR
+et les amplicons obtenus séquencés.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Dans un second temps&lt;/span&gt;
+, il faudra concevoir les gènes de synthèse incluant des flags.
+La société GeneWiz basée à Londres propose des tarifs avantageux par rapport à Thermo-fischer, il faudra discuter avec eux du prix (devis pour les séquences de synthèse entière + flag). Ce flag permettra de discriminer les clones les uns des autres, et d&amp;rsquo;être sûr après séquençage de n&amp;rsquo;analyser que des reads issus de clones différents.&lt;/p&gt;
+
+&lt;p&gt;Un problème non résolu est que la longueur maximale de séquençage sera
+comprise entre 0 et 600bp, alors que notre locus d&amp;rsquo;intérêt mesure
+800bp. On a brièvement mentionné le minION de Oxford Nanopore, qui
+permettrait de séquencer les reads en entier. Pour l&amp;rsquo;instant, le taux
+d&amp;rsquo;erreur semble trop élevé pour notre intérêt. Il existe un groupe de
+travail au BBE sur le thème NGS, et Gabriel Marais a un projet en
+lien.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Notre approche&lt;/span&gt;
+ est locus
+dépendante. Bubendorfer &lt;em&gt;et al&lt;/em&gt; ont utilisé la transformation à
+l&amp;rsquo;échelle du génome entier chez &lt;em&gt;H.pylori&lt;/em&gt;. On peut éventuellement s&amp;rsquo;inspirer de leur protocole.&lt;/p&gt;
+
+&lt;p&gt;Ils ont deux types de protocole. Un protocole où une souche receveuse est incubée en présence d&amp;rsquo;un excès d&amp;rsquo;ADN d&amp;rsquo;une souche donneuse divergente de la receveuse à 4.5%&lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;Un polymorphisme toutes les 22bp.&lt;/span&gt; 
+, et la manip est répétée sur 50 jours, à l&amp;rsquo;issue desquelles 20 clones ont été séquencés en short-reads. Le second protocole implique une sélection de l&amp;rsquo;intégration d&amp;rsquo;une cassette de résistance par culture sur milieu + antibiotique comme nous. Au bout d&amp;rsquo;une génération, 20 clones sont WGS.&lt;/p&gt;
+
+&lt;p&gt;Dans un premier temps, on veut estimer le nombre de positions de marqueurs qu&amp;rsquo;ils ont pu analyser en séquençant 20 génomes entiers, ainsi que le coût associé.&lt;/p&gt;
+
+&lt;p&gt;Dans un second temps et si l&amp;rsquo;estimation paraît favorable, on peut creuser leurs données et faire nos &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2016/01/25/on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/&#34;&gt;reasearch parasites&lt;/a&gt;&amp;rdquo;, pour voir si leurs marqueurs ne montreraient pas par hasard un biais quelconque.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

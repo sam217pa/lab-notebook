@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="tablesaw-enhanced" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+    <title>Lab notebook - Bilan de la semaine</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Lab notebook">
+<meta name="generator" content="Hugo 0.16" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/envisioned.css">
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/tablesaw-stackonly.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/nudge.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/hugo-envisioned.css">
+
+</head>
+
+
+<body>
+    <div id="layout">
+        <article>
+            <header class="brand">
+    <h1>Lab notebook</h1>
+    <h2>Samuel Barreto</h2>
+    <div class="menu-btn">+</div>
+    <nav class="pushy pushy-left">
+    <ul>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/"><i class='fa fa-home fa-lg'></i> Récents</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/post"><i class='fa fa-book fa-lg'></i> Par date</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/categories"><i class='fa fa-tags fa-lg'></i> Catégories</a></li>
+        
+    </ul>
+</nav>
+<div class="site-overlay"></div>
+
+</header>
+
+            
+<h1>
+    
+    <a href="https://sam217pa.github.io/lab-notebook/post/2016-10-07/">Bilan de la semaine</a>
+    
+</h1>
+
+
+<span class="content-meta">
+    
+    <i class="fa fa-user">&nbsp;</i><span class="author">
+        &nbsp;Samuel Barreto</span> <br>
+    
+
+
+    
+    <i class="fa fa-calendar"></i>
+    &nbsp;Oct 7, 2016
+    
+
+    
+    &nbsp;<i class="fa fa-clock-o"></i>
+    &nbsp;3 min read
+    
+
+    
+    <br>
+    <i class="fa fa-tags"> </i>
+    
+    <a  href="https://sam217pa.github.io/categories/bilan">bilan</a>
+    
+    
+</span>
+
+
+
+
+            
+
+            <section><p>Quelles sont les avancées de la semaine ?</p>
+
+<p><span class="newthought">Pour le séquençage</span>
+, on a vu avec Sandrine Demanèche de l&rsquo;école centrale qu&rsquo;il était préférable d&rsquo;utiliser la chimie 2 x 250 à la 2 x 300. D&rsquo;après elle il est bien connu qu&rsquo;elle est plus fiable et moins error-prone. Elle nous a aussi confirmé — malheureusement — qu&rsquo;il vaut mieux avoir un recouvrement entre le forward et reverse.</p>
+
+<blockquote>
+<p>Une petite info complémentaire : le fait de pouvoir joindre les 2 reads permet de corriger les erreurs. S’il n’y a pas de recouvrement, je te conseille la chimie V2 (2x250bp) plutôt que V3 (2x300bp). Tu verras sur les 2 graphes de qualité ci-dessous qu’il vaut mieux 250 bp de bonne qualité (V2 à gauche). C’est un fait reconnu que la chimie V3 n’est pas top (graphe à droite), donc sans recouvrement, tu risques de trouver beaucoup de SNPs artificiels !!! et en plus elle est moins chère J.</p>
+</blockquote>
+
+<p>Ça nous conduit donc à réduire la taille de la zone analysée. On peut le faire de deux façons.</p>
+
+<p>Soit on transforme avec la même construction mais on utilise un couple d&rsquo;amorce différent. Il cible uniquement les 450 bases après la cassette de résistance. On est sûr qu&rsquo;on n&rsquo;amplifie uniquement des transformants grâce à la phase de culture en milieu solide + kanamycine.</p>
+
+
+
+
+  
+    <figure >
+  
+
+
+
+  <label for="" class="margin-toggle">⊕</label>
+  <input type="checkbox" id="" class="margin-toggle">
+  <span class="marginnote">
+  
+
+  
+  
+  
+  
+  
+
+  </span>
+
+
+  
+  <img src="https://sam217pa.github.io/lab-notebook/img/20161007-construction.svg" >
+  
+
+
+
+</figure>
+
+
+
+<p>Soit on réduit la taille de la construction donneuse. En amont de la transformation, on amplifie avec une amorce ciblant la région entre 350 et 800bp sur le gène de synthèse et l&rsquo;amorce complémentaire à l&rsquo;extrémité de la région ancre.</p>
+
+
+
+
+  
+    <figure >
+  
+
+
+
+  <label for="" class="margin-toggle">⊕</label>
+  <input type="checkbox" id="" class="margin-toggle">
+  <span class="marginnote">
+  
+
+  
+  
+  
+  
+  
+
+  </span>
+
+
+  
+  <img src="https://sam217pa.github.io/lab-notebook/img/20161007-construction-2.svg" >
+  
+
+
+
+</figure>
+
+
+
+<p>Les amplicons obtenus sont utilisés pour la transformation. D&rsquo;après les travaux de Florence, on n&rsquo;a pas de perte d&rsquo;efficacité de transformation lorsqu&rsquo;on utilise un amplicon à la place d&rsquo;un plasmide brut. Mais ça n&rsquo;a jamais été testé avec un fragment de taille réduite.</p>
+
+<p>On perdra dans tous les cas les 8 derniers marqueurs : 15 marqueurs au lieu de 23. Si on parvient à séquencer 10 000 clones indépendants, on aura cependant 150 000 marqueurs potentiels. On peut également capter des cas de restaurations ponctuelles : à vue d&rsquo;œil, 70 - 80% des cas de restaurations qu&rsquo;on a détecté sont dans les 450 premières bases.</p>
+
+<p>Pour la technologie de séquençage, je n&rsquo;ai rien trouvé de transcendant chez Illumina. Il faudra utiliser les protocoles de séquençages en métagénomique (ADN r16S), on reste sur du séquençage d&rsquo;amplicon classique.</p>
+
+<p><span class="newthought">Pour le gène synthétique</span>
+, je suis entré en contact avec le service technique de GeneWiz. Je leur ai expliqué globalement la construction de nos rêves, et ai eu une réponse le lendemain. Ils pensent pouvoir le faire, mais préfèrent discuter avec moi / nous du projet d&rsquo;abord. Ils sont en train d&rsquo;organiser une visio-conférence.</p>
+</section>
+            <section>
+                
+
+                <footer class="footer">
+		<hr>
+		<ul class="page-footer-menu">
+		    
+		</ul>
+
+    
+
+	  <div class="copyright">
+	      <p>
+            
+            &copy; 2016
+            Samuel Barreto.
+            
+        </p>
+    </div>
+</footer>
+
+
+<script src="https://sam217pa.github.io/lab-notebook/js/jquery.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/tablesaw-stackonly.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/nudge.min.js"></script> 
+
+            </section>
+        </article>
+    </div>
+</body>
+</html>

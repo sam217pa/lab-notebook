@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab notebook</title>
+    <link>https://sam217pa.github.io/lab-notebook/</link>
+    <description>Recent content on Lab notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 07 Oct 2016 16:07:28 +0200</lastBuildDate>
+    <atom:link href="https://sam217pa.github.io/lab-notebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bilan de la semaine</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-10-07/</link>
+      <pubDate>Fri, 07 Oct 2016 16:07:28 +0200</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-07/</guid>
+      <description>&lt;p&gt;Quelles sont les avancées de la semaine ?&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Pour le séquençage&lt;/span&gt;
+, on a vu avec Sandrine Demanèche de l&amp;rsquo;école centrale qu&amp;rsquo;il était préférable d&amp;rsquo;utiliser la chimie 2 x 250 à la 2 x 300. D&amp;rsquo;après elle il est bien connu qu&amp;rsquo;elle est plus fiable et moins error-prone. Elle nous a aussi confirmé — malheureusement — qu&amp;rsquo;il vaut mieux avoir un recouvrement entre le forward et reverse.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Une petite info complémentaire : le fait de pouvoir joindre les 2 reads permet de corriger les erreurs. S’il n’y a pas de recouvrement, je te conseille la chimie V2 (2x250bp) plutôt que V3 (2x300bp). Tu verras sur les 2 graphes de qualité ci-dessous qu’il vaut mieux 250 bp de bonne qualité (V2 à gauche). C’est un fait reconnu que la chimie V3 n’est pas top (graphe à droite), donc sans recouvrement, tu risques de trouver beaucoup de SNPs artificiels !!! et en plus elle est moins chère J.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ça nous conduit donc à réduire la taille de la zone analysée. On peut le faire de deux façons.&lt;/p&gt;
+
+&lt;p&gt;Soit on transforme avec la même construction mais on utilise un couple d&amp;rsquo;amorce différent. Il cible uniquement les 450 bases après la cassette de résistance. On est sûr qu&amp;rsquo;on n&amp;rsquo;amplifie uniquement des transformants grâce à la phase de culture en milieu solide + kanamycine.&lt;/p&gt;
+
+
+
+
+  
+    &lt;figure &gt;
+  
+
+
+
+  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+
+  
+  
+  
+  
+  
+
+  &lt;/span&gt;
+
+
+  
+  &lt;img src=&#34;https://sam217pa.github.io/lab-notebook/img/20161007-construction.svg&#34; &gt;
+  
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Soit on réduit la taille de la construction donneuse. En amont de la transformation, on amplifie avec une amorce ciblant la région entre 350 et 800bp sur le gène de synthèse et l&amp;rsquo;amorce complémentaire à l&amp;rsquo;extrémité de la région ancre.&lt;/p&gt;
+
+
+
+
+  
+    &lt;figure &gt;
+  
+
+
+
+  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+
+  
+  
+  
+  
+  
+
+  &lt;/span&gt;
+
+
+  
+  &lt;img src=&#34;https://sam217pa.github.io/lab-notebook/img/20161007-construction-2.svg&#34; &gt;
+  
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Les amplicons obtenus sont utilisés pour la transformation. D&amp;rsquo;après les travaux de Florence, on n&amp;rsquo;a pas de perte d&amp;rsquo;efficacité de transformation lorsqu&amp;rsquo;on utilise un amplicon à la place d&amp;rsquo;un plasmide brut. Mais ça n&amp;rsquo;a jamais été testé avec un fragment de taille réduite.&lt;/p&gt;
+
+&lt;p&gt;On perdra dans tous les cas les 8 derniers marqueurs : 15 marqueurs au lieu de 23. Si on parvient à séquencer 10 000 clones indépendants, on aura cependant 150 000 marqueurs potentiels. On peut également capter des cas de restaurations ponctuelles : à vue d&amp;rsquo;œil, 70 - 80% des cas de restaurations qu&amp;rsquo;on a détecté sont dans les 450 premières bases.&lt;/p&gt;
+
+&lt;p&gt;Pour la technologie de séquençage, je n&amp;rsquo;ai rien trouvé de transcendant chez Illumina. Il faudra utiliser les protocoles de séquençages en métagénomique (ADN r16S), on reste sur du séquençage d&amp;rsquo;amplicon classique.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Pour le gène synthétique&lt;/span&gt;
+, je suis entré en contact avec le service technique de GeneWiz. Je leur ai expliqué globalement la construction de nos rêves, et ai eu une réponse le lendemain. Ils pensent pouvoir le faire, mais préfèrent discuter avec moi / nous du projet d&amp;rsquo;abord. Ils sont en train d&amp;rsquo;organiser une visio-conférence.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Estimation du nombre de marqueurs</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-10-05/</link>
+      <pubDate>Wed, 05 Oct 2016 14:05:17 +0200</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-05/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;On veut estimer&lt;/span&gt;
+ le nombre de
+marqueurs analysés au total par souche dans la publication de
+Bubendorfer &lt;em&gt;et al&lt;/em&gt;. Le but est de déterminer si ce genre de manip&amp;rsquo;
+peut avoir assez de puissance pour estimer un biais de conversion.&lt;/p&gt;
+
+&lt;p&gt;Il est reporté que les deux souches utilisées sont divergentes à 4.5%. Selon l&amp;rsquo;estimation de la longueur des régions converties (minimale ou maximale), on peut donc avancer deux estimateurs.&lt;/p&gt;
+
+&lt;p&gt;Pour la manip&amp;rsquo; de transformations répétées, ils reportent que la
+longueur moyenne totale des polymorphismes est au minimum de 55,644 ± 36,108.&lt;/p&gt;
+
+&lt;p&gt;Donc avec un polymorphisme toutes les 22bp, ça donne 2529 ± 1641
+marqueurs combinés sur les 20 souches séquencées. Au maximum, 2737 ± 1734 marqueurs analysés sur les 20 souches.&lt;/p&gt;
+
+&lt;p&gt;Dans tous les cas, c&amp;rsquo;est très loin des 6818 marqueurs obtenus obtenus avec nos manips de séquençage en Sanger.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Compte-rendu réunion du 03 octobre</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-10-04/</link>
+      <pubDate>Tue, 04 Oct 2016 17:55:08 +0200</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-04/</guid>
+      <description>&lt;p&gt;Ordre du jour : discuter des stratégies pour mesurer le BGC &lt;em&gt;in-vitro&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;La stratégie Sanger a permis de déterminer la distribution des points de cassure, d&amp;rsquo;avoir une idée approximative de l&amp;rsquo;intensité du biais à laquelle on peut s&amp;rsquo;attendre&lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;C&amp;rsquo;est à dire faible, à priori.&lt;/span&gt; 
+, mais elle ne permet pas d&amp;rsquo;atteindre la puissance suffisante.&lt;/p&gt;
+
+&lt;p&gt;On veut donc partir sur une stratégie en NGS.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;L&amp;rsquo;école centrale&lt;/span&gt;
+ à Écully dispose
+d&amp;rsquo;un séquenceur MiSeq Illumina à 40 - 50€ le run de 2 x 300. Ce sont
+les mêmes prix que ceux pratiqués par Mr DNA. On a une interlocutrice
+là-bas avec qui discuter de la meilleure façon de préparer la
+librairie. Le problème de la faible divergence de nos séquences est
+résolu puisqu&amp;rsquo;ils seront mélangés à des séquences tierces. La
+diversité dans la flow-cell sera donc suffisante.&lt;/p&gt;
+
+&lt;p&gt;À ce prix, on peut envisager une manip&amp;rsquo; préliminaire qui donnerait une
+idée de ce à quoi on peut s&amp;rsquo;attendre en NGS ; préliminaire à une
+manip&amp;rsquo; qui s&amp;rsquo;effectuerait avec des reads taggés.&lt;/p&gt;
+
+&lt;p&gt;Une question qui reste pour l&amp;rsquo;instant en suspens : est-ce que les
+reads en paired-end doivent être chevauchants ou non ? Est-ce qu&amp;rsquo;on
+peut laisser un gap entre les extrémités de la séquence ? S&amp;rsquo;il faut
+nécessairement que les reads soient chevauchants (50 bp), on peut
+réfléchir à une stratégie en coupant éventuellement les fragments en 2
+avec des enzymes de restriction par exemple.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Pour les manips&lt;/span&gt;
+, on envisage
+d&amp;rsquo;adapter le protocole pour obtenir non plus 3000 transformants mais
+100 000. L&amp;rsquo;idée est que si le nombre de génomes est en large excès par
+rapport au nombre de transformants effectivement séquencés, on
+diminue la probabilité que deux transformants séquencés soient des
+clones identiques.&lt;/p&gt;
+
+&lt;p&gt;À l&amp;rsquo;issue de la transformation, les produits de transformations seront
+étalés sur LB + kanamycine, 500µL sur boîtes de 120mm, avec un plus grand
+nombre de boîte &lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;Incluant des réplicats biologiques ?&lt;/span&gt; 
+.
+Après 24h de culture, les boîtes seront raclées, et l&amp;rsquo;ADN total extrait, le locus amplifié par PCR
+et les amplicons obtenus séquencés.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Dans un second temps&lt;/span&gt;
+, il faudra concevoir les gènes de synthèse incluant des flags.
+La société GeneWiz basée à Londres propose des tarifs avantageux par rapport à Thermo-fischer, il faudra discuter avec eux du prix (devis pour les séquences de synthèse entière + flag). Ce flag permettra de discriminer les clones les uns des autres, et d&amp;rsquo;être sûr après séquençage de n&amp;rsquo;analyser que des reads issus de clones différents.&lt;/p&gt;
+
+&lt;p&gt;Un problème non résolu est que la longueur maximale de séquençage sera
+comprise entre 0 et 600bp, alors que notre locus d&amp;rsquo;intérêt mesure
+800bp. On a brièvement mentionné le minION de Oxford Nanopore, qui
+permettrait de séquencer les reads en entier. Pour l&amp;rsquo;instant, le taux
+d&amp;rsquo;erreur semble trop élevé pour notre intérêt. Il existe un groupe de
+travail au BBE sur le thème NGS, et Gabriel Marais a un projet en
+lien.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Notre approche&lt;/span&gt;
+ est locus
+dépendante. Bubendorfer &lt;em&gt;et al&lt;/em&gt; ont utilisé la transformation à
+l&amp;rsquo;échelle du génome entier chez &lt;em&gt;H.pylori&lt;/em&gt;. On peut éventuellement s&amp;rsquo;inspirer de leur protocole.&lt;/p&gt;
+
+&lt;p&gt;Ils ont deux types de protocole. Un protocole où une souche receveuse est incubée en présence d&amp;rsquo;un excès d&amp;rsquo;ADN d&amp;rsquo;une souche donneuse divergente de la receveuse à 4.5%&lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;Un polymorphisme toutes les 22bp.&lt;/span&gt; 
+, et la manip est répétée sur 50 jours, à l&amp;rsquo;issue desquelles 20 clones ont été séquencés en short-reads. Le second protocole implique une sélection de l&amp;rsquo;intégration d&amp;rsquo;une cassette de résistance par culture sur milieu + antibiotique comme nous. Au bout d&amp;rsquo;une génération, 20 clones sont WGS.&lt;/p&gt;
+
+&lt;p&gt;Dans un premier temps, on veut estimer le nombre de positions de marqueurs qu&amp;rsquo;ils ont pu analyser en séquençant 20 génomes entiers, ainsi que le coût associé.&lt;/p&gt;
+
+&lt;p&gt;Dans un second temps et si l&amp;rsquo;estimation paraît favorable, on peut creuser leurs données et faire nos &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2016/01/25/on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/&#34;&gt;reasearch parasites&lt;/a&gt;&amp;rdquo;, pour voir si leurs marqueurs ne montreraient pas par hasard un biais quelconque.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Approches</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-10-03/</link>
+      <pubDate>Mon, 03 Oct 2016 01:30:04 +0200</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-03/</guid>
+      <description>
+
+&lt;p&gt;Quelles sont les deux approches envisagées à ce jour pour étudier la
+conversion génique &lt;em&gt;in-vitro&lt;/em&gt; ?&lt;/p&gt;
+
+&lt;h1 id=&#34;approche-locus-dépendante&#34;&gt;Approche locus dépendante&lt;/h1&gt;
+
+
+
+
+  
+    &lt;figure &gt;
+  
+
+
+
+  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+
+  
+  
+  
+  
+  
+
+  &lt;/span&gt;
+
+
+  
+  &lt;img src=&#34;https://sam217pa.github.io/lab-notebook/img/construction-insertion-simple.svg&#34; &gt;
+  
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;C&amp;rsquo;est notre approche classique jusqu&amp;rsquo;à maintenant. L&amp;rsquo;idée est
+d&amp;rsquo;adapter le protocole pour pouvoir passer à l&amp;rsquo;échelle supérieure et
+séquencer un grand nombre de clones, à un prix raisonnable, en
+attendant un signal suffisamment fort, et en tout cas suffisamment
+puissant pour pouvoir exclure &amp;ldquo;l&amp;rsquo;absence de preuve plutôt que la
+preuve d&amp;rsquo;absence&amp;rdquo; (au cas où…).&lt;/p&gt;
+
+&lt;p&gt;Ça implique aussi de construire de nouvelles séquences de synthèse
+pour chaque modèle, locus ou souche.&lt;/p&gt;
+
+&lt;h2 id=&#34;séquencer-en-sanger&#34;&gt;Séquencer en Sanger ?&lt;/h2&gt;
+
+&lt;p&gt;Ça on sait bien le faire. C&amp;rsquo;est relativement léger en manip, c&amp;rsquo;est
+déjà fait, déjà validé. Le principal inconvénient est le coût. Si on
+veut avoir suffisamment de puissance, le séquençage de sanger est à
+300€ par plaque. D&amp;rsquo;après les calculs de puissance que j&amp;rsquo;avais fait
+pour le rapport de stage&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Commit-du-thu-ma&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:Commit-du-thu-ma&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, il faudrait séquencer 717 clones pour
+détecter une différence de l&amp;rsquo;ordre de 30 bp entre les longueurs de
+régions converties (une base de plus insérée dans un groupe que dans
+l&amp;rsquo;autre en moyenne). Si on s&amp;rsquo;intéresse aux restaurations ponctuelles,
+il faudrait séquencer 2200 clones pour pouvoir observer un effet
+faible du biais de conversion avec un niveau de puissance convenable
+(0,8).&lt;/p&gt;
+
+&lt;h2 id=&#34;séquencer-en-illumina&#34;&gt;Séquencer en Illumina ?&lt;/h2&gt;
+
+&lt;p&gt;On peut avoir différentes stratégies pour séquencer en short-reads.
+La première serait de ne cibler qu&amp;rsquo;une petite partie du locus
+correspondant à la partie comprise entre le flag et une amorce
+localisée au sein de la séquence de synthèse.&lt;/p&gt;
+
+&lt;p&gt;Construction : gs + flag + kana + ancre.
+Le problème le plus important est la validité de la diversité des
+flags. Les gens de thermo fischer pourraient peut être construire la
+séquence entière, d&amp;rsquo;après leur commercial. Par contre le coût de la
+séquence de synthèse risque d&amp;rsquo;être assez élevé, puisqu&amp;rsquo;on aurait une
+longueur totale de 3kb environ, incluant des flags.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;intégration dans le génome d&amp;rsquo;&lt;em&gt;A.baylyi&lt;/em&gt; se ferait par les mêmes
+procédés qu&amp;rsquo;utilisés jusqu&amp;rsquo;à maintenant. À l&amp;rsquo;issue de la phase
+d&amp;rsquo;intégration (2h à 30°C), on peut avoir deux stratégies. 1) On ajoute
+de la kanamycine dans la suspension, en milieu liquide. 2) On étale
+les colonies sur milieu solide + kana. Le problème de 1) est qu&amp;rsquo;on
+peut avoir un clone qui envahit toute la culture relativement
+rapidement (biblio ?). Le problème de 2) est qu&amp;rsquo;on est obligé de
+purifier les clones un par un, soit beaucoup — beaucoup — de travail
+et de manipulations avant le séquençage, donc d&amp;rsquo;autant plus de risques
+d&amp;rsquo;introduire des mutations spontanées.&lt;/p&gt;
+
+&lt;p&gt;À l&amp;rsquo;issue de 1), il faut d&amp;rsquo;une manière ou d&amp;rsquo;une autre augmenter la représentativité de la séquence d&amp;rsquo;intérêt dans le pool d&amp;rsquo;ADN. On peut alors utiliser des enzymes de restriction, à condition d&amp;rsquo;être sûr de la spécificité de la restriction &lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;On ne coupe bien que la séquence qui nous intéresse ?&lt;/span&gt; 
+. On peut aussi amplifier le &amp;ldquo;metagène&amp;rdquo;, autrement dit amplifier le locus sur l&amp;rsquo;ensemble de l&amp;rsquo;ADN total extrait de la suspension liquide. Il se peut qu&amp;rsquo;on introduise des biais de PCR &lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;Certaines séquences s&amp;rsquo;amplifient mieux que d&amp;rsquo;autres ? Certains locus sont plus accessibles que d&amp;rsquo;autres ?&lt;/span&gt; 
+&lt;/p&gt;
+
+&lt;p&gt;À l&amp;rsquo;issue de 2) &lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;en milieu solide&lt;/span&gt; 
+, on peut amplifier individuellement chaque clone comme on le fait déjà. Ça permettrait de quantifier pour équilibrer la représentativité des clones et construire un pool d&amp;rsquo;amplicon, qui peut ensuite être envoyé à séquencer.&lt;/p&gt;
+
+&lt;p&gt;Avantage : on garde la stratégie existante, pour lesquelles les manips
+sont connues.&lt;/p&gt;
+
+&lt;p&gt;Le principal verrou de cet approche est qu&amp;rsquo;on ne peut séquencer qu&amp;rsquo;une
+petite partie du locus en NGS. L&amp;rsquo;approche NGS n&amp;rsquo;est pas vraiment
+adaptée à ce genre de problème. On peut éventuellement adapter des
+protocoles de métagénomique (le séquençage d&amp;rsquo;amplicon est souvent
+utilisé pour des pools d&amp;rsquo; ADN 16S.). Le problème suivant est que la —
+très — faible divergence entre nos reads conduirait à un signal très
+bruité : toutes les caméras flashent en même temps les mêmes reads.
+S&amp;rsquo;il n&amp;rsquo;y a pas suffisamment de divergence entre les reads, les caméras
+sont saturées, et on perd la moitié de la flow cell en solution
+calibrante Illumina qui vaut cher.&lt;/p&gt;
+
+&lt;h2 id=&#34;séquencer-en-nanopore&#34;&gt;Séquencer en nanopore ?&lt;/h2&gt;
+
+&lt;p&gt;Une approche éventuellement intéressante serait de tester les
+nouvelles générations de séquençage nanopore.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://nanoporetech.com/applications/dna-nanopore-sequencing&#34;&gt;https://nanoporetech.com/applications/dna-nanopore-sequencing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On n&amp;rsquo;est pas limité par la taille des reads (512kb déjà rapportés…).
+On peut passer l&amp;rsquo;ensemble des reads avec une seule flow cell
+([@edwards_extreme_2016]). C&amp;rsquo;est du brin par brin, donc pas de soucis
+d&amp;rsquo;homologie etc… C&amp;rsquo;est pas cher (starter kits à 1k€ devrait d&amp;rsquo;après
+mes quelques recherches suffire à passer l&amp;rsquo;ensemble des lectures des
+manips). Et on peut le faire au labo (on aurait le séquenceur au
+labo).&lt;/p&gt;
+
+&lt;p&gt;Inconvénient : c&amp;rsquo;est nouveau, encore peu connu (mais
+de mieux en mieux), peu de recul sur la fiabilité et le taux d&amp;rsquo;erreur
+(possibilité de séquencer en fwd-rev pour diminuer le taux d&amp;rsquo;erreur).
+Nécessité formation ou en tout cas de bien préparer ça.&lt;/p&gt;
+
+&lt;h1 id=&#34;approche-globale&#34;&gt;Approche globale&lt;/h1&gt;
+
+&lt;p&gt;Cette approche s&amp;rsquo;inspire de celle utilisée par Bubendorfer &lt;em&gt;et al&lt;/em&gt; dans
+le papier de 2016 sur &lt;em&gt;H.pylori&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Dans les paragraphes suivants, je développe les différentes étapes du
+protocole qui nous intéressent et pourraient être appliquées à notre
+projet.&lt;/p&gt;
+
+&lt;h2 id=&#34;pré-requis-déterminer-deux-souches-divergentes-d-acinetobacter-baylyi&#34;&gt;Pré-requis : déterminer deux souches divergentes d&amp;rsquo;&lt;em&gt;Acinetobacter baylyi&lt;/em&gt;.&lt;/h2&gt;
+
+&lt;p&gt;Ils utilisent deux souches d&amp;rsquo;&lt;em&gt;H.pylori&lt;/em&gt; qui divergent de 4.5%, donc en
+moyenne un polymorphisme toutes les 22 paires de bases.&lt;/p&gt;
+
+&lt;p&gt;Notre capacité à déterminer avec précision les régions converties dépend
+de la fréquence de divergence entre le donneur et le receveur.&lt;/p&gt;
+
+&lt;h2 id=&#34;intégration-passive-expériences-de-transformations-répétées&#34;&gt;Intégration passive : expériences de transformations répétées&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;idée est de procéder à des transformations successives.&lt;/p&gt;
+
+
+
+
+  
+    &lt;figure class=&#34;fullwidth&#34;&gt;
+  
+
+
+
+  
+  &lt;img src=&#34;https://sam217pa.github.io/lab-notebook/img/transformation-repetee.svg&#34; &gt;
+  
+  &lt;figcaption&gt;
+
+  
+  
+  
+  
+  
+
+  &lt;/figcaption&gt;
+
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Toutes les cultures s&amp;rsquo;effectuent en milieu sélectif. Il faut quand même
+contrôler régulièrement pour l&amp;rsquo;absence de contaminations. À chaque
+étape, plusieurs aliquots peuvent être utilisés pour assurer un backup.&lt;/p&gt;
+
+&lt;p&gt;À la fin des transformations répétées, l&amp;rsquo;aliquot est étalé sur un milieu
+non sélectif. Ils ont séquencé 20 clones, plus deux transformés
+uniquement par de l&amp;rsquo;eau (&lt;em&gt;ie&lt;/em&gt; incubés en présence d&amp;rsquo;eau au lieu d&amp;rsquo;ADN de
+la souche donneuse). Le séquençage se fait en fragmentant le génome des
+souches par un kit Illumina, poolé et séquencé en MiSeq.&lt;/p&gt;
+
+&lt;p&gt;Cette manip nécessite d&amp;rsquo;avoir une importante quantité d&amp;rsquo;ADN de souche
+donneuse.&lt;/p&gt;
+
+&lt;h2 id=&#34;intégration-forcée-expériences-de-transformations-simples&#34;&gt;Intégration forcée : expériences de transformations simples&lt;/h2&gt;
+
+&lt;p&gt;Même protocole qu&amp;rsquo;auparavant.&lt;/p&gt;
+
+&lt;p&gt;La souche receveuse est incubée en présence d&amp;rsquo;un excès d&amp;rsquo;ADN de la
+souche donneuse, puis étalée au bout d&amp;rsquo;une génération sur un milieu
+sélectionnant les intégrations de la cassette de résistance au
+chloramphénicol. L&amp;rsquo;intégration de cette cassette passe par deux régions
+identiques au génome receveur en 5&amp;rsquo; et 3&amp;rsquo; de la cassette.&lt;/p&gt;
+
+&lt;h2 id=&#34;que-disent-leurs-résultats&#34;&gt;Que disent leurs résultats ?&lt;/h2&gt;
+
+&lt;p&gt;Ils ont pu observer :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;la distribution des évènements de recombinaison à l&amp;rsquo;échelle du
+génome chez &lt;em&gt;H.pylori&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;la distribution de la longueur des évènements de recombinaison :
+combien d&amp;rsquo;imports par souche ? quelle longueur ? combien de
+remplacements ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ils ont montré que la distribution de la longueur des évènements de
+recombinaison dans ce modèle est bimodale. Les évènements sont soit
+très courts (insertion de 28bp en moyenne), soit longs (1645bp). Cette
+approche est suffisamment puissante pour pouvoir analyser à la fois
+les deux types d&amp;rsquo;insertions. L&amp;rsquo;approche locus dépendante a pour
+inconvénient de biaiser l&amp;rsquo;observation : on n&amp;rsquo;observe que des
+évènements d&amp;rsquo;une longueur comprise entre 0 et la longueur maximale de
+la région intégrée.&lt;/p&gt;
+
+&lt;p&gt;Un de leur résultat anodin mais important pour nous est que la
+longueur des évènements sélectionnés (&lt;em&gt;ie&lt;/em&gt; associés à une cassette de
+résistance) est plus importante que la longueur des évènements
+d&amp;rsquo;intégration &amp;ldquo;passive&amp;rdquo;. La plupart des évènements d&amp;rsquo;intégration
+non-sélectionnés dans leurs manips d&amp;rsquo;intégrations forcée sont à
+proximité du site d&amp;rsquo;intégration de la cassette, indiquant une liaison
+entre l&amp;rsquo;évènement de recombinaison sélectionné et ceux
+non-sélectionnés.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:Commit-du-thu-ma&#34;&gt;Commit du thu may 26. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Commit-du-thu-ma&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

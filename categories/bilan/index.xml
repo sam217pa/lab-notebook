@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bilan on Lab notebook</title>
+    <link>https://sam217pa.github.io/lab-notebook/categories/bilan/</link>
+    <description>Recent content in Bilan on Lab notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 07 Oct 2016 16:07:28 +0200</lastBuildDate>
+    <atom:link href="https://sam217pa.github.io/lab-notebook/categories/bilan/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bilan de la semaine</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-10-07/</link>
+      <pubDate>Fri, 07 Oct 2016 16:07:28 +0200</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-07/</guid>
+      <description>&lt;p&gt;Quelles sont les avancées de la semaine ?&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Pour le séquençage&lt;/span&gt;
+, on a vu avec Sandrine Demanèche de l&amp;rsquo;école centrale qu&amp;rsquo;il était préférable d&amp;rsquo;utiliser la chimie 2 x 250 à la 2 x 300. D&amp;rsquo;après elle il est bien connu qu&amp;rsquo;elle est plus fiable et moins error-prone. Elle nous a aussi confirmé — malheureusement — qu&amp;rsquo;il vaut mieux avoir un recouvrement entre le forward et reverse.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Une petite info complémentaire : le fait de pouvoir joindre les 2 reads permet de corriger les erreurs. S’il n’y a pas de recouvrement, je te conseille la chimie V2 (2x250bp) plutôt que V3 (2x300bp). Tu verras sur les 2 graphes de qualité ci-dessous qu’il vaut mieux 250 bp de bonne qualité (V2 à gauche). C’est un fait reconnu que la chimie V3 n’est pas top (graphe à droite), donc sans recouvrement, tu risques de trouver beaucoup de SNPs artificiels !!! et en plus elle est moins chère J.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ça nous conduit donc à réduire la taille de la zone analysée. On peut le faire de deux façons.&lt;/p&gt;
+
+&lt;p&gt;Soit on transforme avec la même construction mais on utilise un couple d&amp;rsquo;amorce différent. Il cible uniquement les 450 bases après la cassette de résistance. On est sûr qu&amp;rsquo;on n&amp;rsquo;amplifie uniquement des transformants grâce à la phase de culture en milieu solide + kanamycine.&lt;/p&gt;
+
+
+
+
+  
+    &lt;figure &gt;
+  
+
+
+
+  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+
+  
+  
+  
+  
+  
+
+  &lt;/span&gt;
+
+
+  
+  &lt;img src=&#34;https://sam217pa.github.io/lab-notebook/img/20161007-construction.svg&#34; &gt;
+  
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Soit on réduit la taille de la construction donneuse. En amont de la transformation, on amplifie avec une amorce ciblant la région entre 350 et 800bp sur le gène de synthèse et l&amp;rsquo;amorce complémentaire à l&amp;rsquo;extrémité de la région ancre.&lt;/p&gt;
+
+
+
+
+  
+    &lt;figure &gt;
+  
+
+
+
+  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+
+  
+  
+  
+  
+  
+
+  &lt;/span&gt;
+
+
+  
+  &lt;img src=&#34;https://sam217pa.github.io/lab-notebook/img/20161007-construction-2.svg&#34; &gt;
+  
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Les amplicons obtenus sont utilisés pour la transformation. D&amp;rsquo;après les travaux de Florence, on n&amp;rsquo;a pas de perte d&amp;rsquo;efficacité de transformation lorsqu&amp;rsquo;on utilise un amplicon à la place d&amp;rsquo;un plasmide brut. Mais ça n&amp;rsquo;a jamais été testé avec un fragment de taille réduite.&lt;/p&gt;
+
+&lt;p&gt;On perdra dans tous les cas les 8 derniers marqueurs : 15 marqueurs au lieu de 23. Si on parvient à séquencer 10 000 clones indépendants, on aura cependant 150 000 marqueurs potentiels. On peut également capter des cas de restaurations ponctuelles : à vue d&amp;rsquo;œil, 70 - 80% des cas de restaurations qu&amp;rsquo;on a détecté sont dans les 450 premières bases.&lt;/p&gt;
+
+&lt;p&gt;Pour la technologie de séquençage, je n&amp;rsquo;ai rien trouvé de transcendant chez Illumina. Il faudra utiliser les protocoles de séquençages en métagénomique (ADN r16S), on reste sur du séquençage d&amp;rsquo;amplicon classique.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Pour le gène synthétique&lt;/span&gt;
+, je suis entré en contact avec le service technique de GeneWiz. Je leur ai expliqué globalement la construction de nos rêves, et ai eu une réponse le lendemain. Ils pensent pouvoir le faire, mais préfèrent discuter avec moi / nous du projet d&amp;rsquo;abord. Ils sont en train d&amp;rsquo;organiser une visio-conférence.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

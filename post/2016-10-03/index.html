@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="tablesaw-enhanced" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+    <title>Lab notebook - Approches</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Lab notebook">
+<meta name="generator" content="Hugo 0.16" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/envisioned.css">
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/tablesaw-stackonly.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/nudge.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/hugo-envisioned.css">
+
+</head>
+
+
+<body>
+    <div id="layout">
+        <article>
+            <header class="brand">
+    <h1>Lab notebook</h1>
+    <h2>Samuel Barreto</h2>
+    <div class="menu-btn">+</div>
+    <nav class="pushy pushy-left">
+    <ul>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/"><i class='fa fa-home fa-lg'></i> Récents</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/post"><i class='fa fa-book fa-lg'></i> Par date</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/categories"><i class='fa fa-tags fa-lg'></i> Catégories</a></li>
+        
+    </ul>
+</nav>
+<div class="site-overlay"></div>
+
+</header>
+
+            
+<h1>
+    
+    <a href="https://sam217pa.github.io/lab-notebook/post/2016-10-03/">Approches</a>
+    
+</h1>
+
+
+<span class="content-meta">
+    
+    <i class="fa fa-user">&nbsp;</i><span class="author">
+        &nbsp;Samuel Barreto</span> <br>
+    
+
+
+    
+    <i class="fa fa-calendar"></i>
+    &nbsp;Oct 3, 2016
+    
+
+    
+    &nbsp;<i class="fa fa-clock-o"></i>
+    &nbsp;6 min read
+    
+
+    
+</span>
+
+
+
+
+            
+<section>
+    <details closed class="toc">
+        <summary>Contents</summary>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#approche-locus-dépendante">Approche locus dépendante</a>
+<ul>
+<li><a href="#séquencer-en-sanger">Séquencer en Sanger ?</a></li>
+<li><a href="#séquencer-en-illumina">Séquencer en Illumina ?</a></li>
+<li><a href="#séquencer-en-nanopore">Séquencer en nanopore ?</a></li>
+</ul></li>
+<li><a href="#approche-globale">Approche globale</a>
+<ul>
+<li><a href="#pré-requis-déterminer-deux-souches-divergentes-d-acinetobacter-baylyi">Pré-requis : déterminer deux souches divergentes d&rsquo;<em>Acinetobacter baylyi</em>.</a></li>
+<li><a href="#intégration-passive-expériences-de-transformations-répétées">Intégration passive : expériences de transformations répétées</a></li>
+<li><a href="#intégration-forcée-expériences-de-transformations-simples">Intégration forcée : expériences de transformations simples</a></li>
+<li><a href="#que-disent-leurs-résultats">Que disent leurs résultats ?</a></li>
+</ul></li>
+</ul>
+</nav>
+    </details>
+</section>
+
+
+            <section>
+
+<p>Quelles sont les deux approches envisagées à ce jour pour étudier la
+conversion génique <em>in-vitro</em> ?</p>
+
+<h1 id="approche-locus-dépendante">Approche locus dépendante</h1>
+
+
+
+
+  
+    <figure >
+  
+
+
+
+  <label for="" class="margin-toggle">⊕</label>
+  <input type="checkbox" id="" class="margin-toggle">
+  <span class="marginnote">
+  
+
+  
+  
+  
+  
+  
+
+  </span>
+
+
+  
+  <img src="https://sam217pa.github.io/lab-notebook/img/construction-insertion-simple.svg" >
+  
+
+
+
+</figure>
+
+
+
+<p>C&rsquo;est notre approche classique jusqu&rsquo;à maintenant. L&rsquo;idée est
+d&rsquo;adapter le protocole pour pouvoir passer à l&rsquo;échelle supérieure et
+séquencer un grand nombre de clones, à un prix raisonnable, en
+attendant un signal suffisamment fort, et en tout cas suffisamment
+puissant pour pouvoir exclure &ldquo;l&rsquo;absence de preuve plutôt que la
+preuve d&rsquo;absence&rdquo; (au cas où…).</p>
+
+<p>Ça implique aussi de construire de nouvelles séquences de synthèse
+pour chaque modèle, locus ou souche.</p>
+
+<h2 id="séquencer-en-sanger">Séquencer en Sanger ?</h2>
+
+<p>Ça on sait bien le faire. C&rsquo;est relativement léger en manip, c&rsquo;est
+déjà fait, déjà validé. Le principal inconvénient est le coût. Si on
+veut avoir suffisamment de puissance, le séquençage de sanger est à
+300€ par plaque. D&rsquo;après les calculs de puissance que j&rsquo;avais fait
+pour le rapport de stage<sup class="footnote-ref" id="fnref:Commit-du-thu-ma"><a rel="footnote" href="#fn:Commit-du-thu-ma">1</a></sup>, il faudrait séquencer 717 clones pour
+détecter une différence de l&rsquo;ordre de 30 bp entre les longueurs de
+régions converties (une base de plus insérée dans un groupe que dans
+l&rsquo;autre en moyenne). Si on s&rsquo;intéresse aux restaurations ponctuelles,
+il faudrait séquencer 2200 clones pour pouvoir observer un effet
+faible du biais de conversion avec un niveau de puissance convenable
+(0,8).</p>
+
+<h2 id="séquencer-en-illumina">Séquencer en Illumina ?</h2>
+
+<p>On peut avoir différentes stratégies pour séquencer en short-reads.
+La première serait de ne cibler qu&rsquo;une petite partie du locus
+correspondant à la partie comprise entre le flag et une amorce
+localisée au sein de la séquence de synthèse.</p>
+
+<p>Construction : gs + flag + kana + ancre.
+Le problème le plus important est la validité de la diversité des
+flags. Les gens de thermo fischer pourraient peut être construire la
+séquence entière, d&rsquo;après leur commercial. Par contre le coût de la
+séquence de synthèse risque d&rsquo;être assez élevé, puisqu&rsquo;on aurait une
+longueur totale de 3kb environ, incluant des flags.</p>
+
+<p>L&rsquo;intégration dans le génome d&rsquo;<em>A.baylyi</em> se ferait par les mêmes
+procédés qu&rsquo;utilisés jusqu&rsquo;à maintenant. À l&rsquo;issue de la phase
+d&rsquo;intégration (2h à 30°C), on peut avoir deux stratégies. 1) On ajoute
+de la kanamycine dans la suspension, en milieu liquide. 2) On étale
+les colonies sur milieu solide + kana. Le problème de 1) est qu&rsquo;on
+peut avoir un clone qui envahit toute la culture relativement
+rapidement (biblio ?). Le problème de 2) est qu&rsquo;on est obligé de
+purifier les clones un par un, soit beaucoup — beaucoup — de travail
+et de manipulations avant le séquençage, donc d&rsquo;autant plus de risques
+d&rsquo;introduire des mutations spontanées.</p>
+
+<p>À l&rsquo;issue de 1), il faut d&rsquo;une manière ou d&rsquo;une autre augmenter la représentativité de la séquence d&rsquo;intérêt dans le pool d&rsquo;ADN. On peut alors utiliser des enzymes de restriction, à condition d&rsquo;être sûr de la spécificité de la restriction <label for="error: cannot access positional params by string name" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="error: cannot access positional params by string name" class="margin-toggle"/>
+<span class="sidenote">On ne coupe bien que la séquence qui nous intéresse ?</span> 
+. On peut aussi amplifier le &ldquo;metagène&rdquo;, autrement dit amplifier le locus sur l&rsquo;ensemble de l&rsquo;ADN total extrait de la suspension liquide. Il se peut qu&rsquo;on introduise des biais de PCR <label for="error: cannot access positional params by string name" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="error: cannot access positional params by string name" class="margin-toggle"/>
+<span class="sidenote">Certaines séquences s&rsquo;amplifient mieux que d&rsquo;autres ? Certains locus sont plus accessibles que d&rsquo;autres ?</span> 
+</p>
+
+<p>À l&rsquo;issue de 2) <label for="error: cannot access positional params by string name" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="error: cannot access positional params by string name" class="margin-toggle"/>
+<span class="sidenote">en milieu solide</span> 
+, on peut amplifier individuellement chaque clone comme on le fait déjà. Ça permettrait de quantifier pour équilibrer la représentativité des clones et construire un pool d&rsquo;amplicon, qui peut ensuite être envoyé à séquencer.</p>
+
+<p>Avantage : on garde la stratégie existante, pour lesquelles les manips
+sont connues.</p>
+
+<p>Le principal verrou de cet approche est qu&rsquo;on ne peut séquencer qu&rsquo;une
+petite partie du locus en NGS. L&rsquo;approche NGS n&rsquo;est pas vraiment
+adaptée à ce genre de problème. On peut éventuellement adapter des
+protocoles de métagénomique (le séquençage d&rsquo;amplicon est souvent
+utilisé pour des pools d&rsquo; ADN 16S.). Le problème suivant est que la —
+très — faible divergence entre nos reads conduirait à un signal très
+bruité : toutes les caméras flashent en même temps les mêmes reads.
+S&rsquo;il n&rsquo;y a pas suffisamment de divergence entre les reads, les caméras
+sont saturées, et on perd la moitié de la flow cell en solution
+calibrante Illumina qui vaut cher.</p>
+
+<h2 id="séquencer-en-nanopore">Séquencer en nanopore ?</h2>
+
+<p>Une approche éventuellement intéressante serait de tester les
+nouvelles générations de séquençage nanopore.</p>
+
+<p><a href="https://nanoporetech.com/applications/dna-nanopore-sequencing">https://nanoporetech.com/applications/dna-nanopore-sequencing</a></p>
+
+<p>On n&rsquo;est pas limité par la taille des reads (512kb déjà rapportés…).
+On peut passer l&rsquo;ensemble des reads avec une seule flow cell
+([@edwards_extreme_2016]). C&rsquo;est du brin par brin, donc pas de soucis
+d&rsquo;homologie etc… C&rsquo;est pas cher (starter kits à 1k€ devrait d&rsquo;après
+mes quelques recherches suffire à passer l&rsquo;ensemble des lectures des
+manips). Et on peut le faire au labo (on aurait le séquenceur au
+labo).</p>
+
+<p>Inconvénient : c&rsquo;est nouveau, encore peu connu (mais
+de mieux en mieux), peu de recul sur la fiabilité et le taux d&rsquo;erreur
+(possibilité de séquencer en fwd-rev pour diminuer le taux d&rsquo;erreur).
+Nécessité formation ou en tout cas de bien préparer ça.</p>
+
+<h1 id="approche-globale">Approche globale</h1>
+
+<p>Cette approche s&rsquo;inspire de celle utilisée par Bubendorfer <em>et al</em> dans
+le papier de 2016 sur <em>H.pylori</em>.</p>
+
+<p>Dans les paragraphes suivants, je développe les différentes étapes du
+protocole qui nous intéressent et pourraient être appliquées à notre
+projet.</p>
+
+<h2 id="pré-requis-déterminer-deux-souches-divergentes-d-acinetobacter-baylyi">Pré-requis : déterminer deux souches divergentes d&rsquo;<em>Acinetobacter baylyi</em>.</h2>
+
+<p>Ils utilisent deux souches d&rsquo;<em>H.pylori</em> qui divergent de 4.5%, donc en
+moyenne un polymorphisme toutes les 22 paires de bases.</p>
+
+<p>Notre capacité à déterminer avec précision les régions converties dépend
+de la fréquence de divergence entre le donneur et le receveur.</p>
+
+<h2 id="intégration-passive-expériences-de-transformations-répétées">Intégration passive : expériences de transformations répétées</h2>
+
+<p>L&rsquo;idée est de procéder à des transformations successives.</p>
+
+
+
+
+  
+    <figure class="fullwidth">
+  
+
+
+
+  
+  <img src="https://sam217pa.github.io/lab-notebook/img/transformation-repetee.svg" >
+  
+  <figcaption>
+
+  
+  
+  
+  
+  
+
+  </figcaption>
+
+
+
+
+</figure>
+
+
+
+<p>Toutes les cultures s&rsquo;effectuent en milieu sélectif. Il faut quand même
+contrôler régulièrement pour l&rsquo;absence de contaminations. À chaque
+étape, plusieurs aliquots peuvent être utilisés pour assurer un backup.</p>
+
+<p>À la fin des transformations répétées, l&rsquo;aliquot est étalé sur un milieu
+non sélectif. Ils ont séquencé 20 clones, plus deux transformés
+uniquement par de l&rsquo;eau (<em>ie</em> incubés en présence d&rsquo;eau au lieu d&rsquo;ADN de
+la souche donneuse). Le séquençage se fait en fragmentant le génome des
+souches par un kit Illumina, poolé et séquencé en MiSeq.</p>
+
+<p>Cette manip nécessite d&rsquo;avoir une importante quantité d&rsquo;ADN de souche
+donneuse.</p>
+
+<h2 id="intégration-forcée-expériences-de-transformations-simples">Intégration forcée : expériences de transformations simples</h2>
+
+<p>Même protocole qu&rsquo;auparavant.</p>
+
+<p>La souche receveuse est incubée en présence d&rsquo;un excès d&rsquo;ADN de la
+souche donneuse, puis étalée au bout d&rsquo;une génération sur un milieu
+sélectionnant les intégrations de la cassette de résistance au
+chloramphénicol. L&rsquo;intégration de cette cassette passe par deux régions
+identiques au génome receveur en 5&rsquo; et 3&rsquo; de la cassette.</p>
+
+<h2 id="que-disent-leurs-résultats">Que disent leurs résultats ?</h2>
+
+<p>Ils ont pu observer :</p>
+
+<ul>
+<li>la distribution des évènements de recombinaison à l&rsquo;échelle du
+génome chez <em>H.pylori</em>.</li>
+<li>la distribution de la longueur des évènements de recombinaison :
+combien d&rsquo;imports par souche ? quelle longueur ? combien de
+remplacements ?</li>
+</ul>
+
+<p>Ils ont montré que la distribution de la longueur des évènements de
+recombinaison dans ce modèle est bimodale. Les évènements sont soit
+très courts (insertion de 28bp en moyenne), soit longs (1645bp). Cette
+approche est suffisamment puissante pour pouvoir analyser à la fois
+les deux types d&rsquo;insertions. L&rsquo;approche locus dépendante a pour
+inconvénient de biaiser l&rsquo;observation : on n&rsquo;observe que des
+évènements d&rsquo;une longueur comprise entre 0 et la longueur maximale de
+la région intégrée.</p>
+
+<p>Un de leur résultat anodin mais important pour nous est que la
+longueur des évènements sélectionnés (<em>ie</em> associés à une cassette de
+résistance) est plus importante que la longueur des évènements
+d&rsquo;intégration &ldquo;passive&rdquo;. La plupart des évènements d&rsquo;intégration
+non-sélectionnés dans leurs manips d&rsquo;intégrations forcée sont à
+proximité du site d&rsquo;intégration de la cassette, indiquant une liaison
+entre l&rsquo;évènement de recombinaison sélectionné et ceux
+non-sélectionnés.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:Commit-du-thu-ma">Commit du thu may 26. <a class="footnote-return" href="#fnref:Commit-du-thu-ma"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</section>
+            <section>
+                
+
+                <footer class="footer">
+		<hr>
+		<ul class="page-footer-menu">
+		    
+		</ul>
+
+    
+
+	  <div class="copyright">
+	      <p>
+            
+            &copy; 2016
+            Samuel Barreto.
+            
+        </p>
+    </div>
+</footer>
+
+
+<script src="https://sam217pa.github.io/lab-notebook/js/jquery.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/tablesaw-stackonly.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/nudge.min.js"></script> 
+
+            </section>
+        </article>
+    </div>
+</body>
+</html>
