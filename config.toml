@@ -1,7 +1,7 @@
 publishdir = "public"
 canonifyurls = true
 baseurl = "https://sam217pa.github.io/lab-notebook/"
-theme = "hugo-tufte"
+theme = "hugo-envisioned"
 title = "Lab notebook"
 
 [author]
@@ -15,7 +15,7 @@ title = "Lab notebook"
   tag = "tags"
 
 [params]
-  subtitle = "Samuel Barreto"
+  author = "Samuel Barreto"
   copyrightHolder = "Samuel Barreto"
   showPoweredBy = false
 
