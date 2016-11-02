@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="tablesaw-enhanced" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+    <title>Lab notebook - Projet Bubendorfer</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Lab notebook">
+<meta name="generator" content="Hugo 0.16" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/envisioned.css">
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/tablesaw-stackonly.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/nudge.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/hugo-envisioned.css">
+
+</head>
+
+
+<body>
+    <div id="layout">
+        <article>
+            <header class="brand">
+    <h1>Lab notebook</h1>
+    <h2>Samuel Barreto</h2>
+    <div class="menu-btn">+</div>
+    <nav class="pushy pushy-left">
+    <ul>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/"><i class='fa fa-home fa-lg'></i> Récents</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/post"><i class='fa fa-book fa-lg'></i> Par date</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/categories"><i class='fa fa-tags fa-lg'></i> Catégories</a></li>
+        
+    </ul>
+</nav>
+<div class="site-overlay"></div>
+
+</header>
+
+            
+<h1>
+    
+    <a href="https://sam217pa.github.io/lab-notebook/post/2016-11-02/">Projet Bubendorfer</a>
+    
+</h1>
+
+
+<span class="content-meta">
+    
+    <i class="fa fa-user">&nbsp;</i><span class="author">
+        &nbsp;Samuel Barreto</span> <br>
+    
+
+
+    
+    <i class="fa fa-calendar"></i>
+    &nbsp;Nov 2, 2016
+    
+
+    
+    &nbsp;<i class="fa fa-clock-o"></i>
+    &nbsp;5 min read
+    
+
+    
+    <br>
+    <i class="fa fa-tags"> </i>
+    
+    <a  href="https://sam217pa.github.io/categories/reunion">reunion</a>
+    
+    <a  href="https://sam217pa.github.io/categories/compte-rendu">compte-rendu</a>
+    
+    <a  href="https://sam217pa.github.io/categories/meta">meta</a>
+    
+    <a  href="https://sam217pa.github.io/categories/bubendorfer">bubendorfer</a>
+    
+    
+</span>
+
+
+
+
+            
+
+            <section><p>Ordre du jour : faire l&rsquo;état des lieux de l&rsquo;avancement sur l&rsquo;analyse des données de Bubendorfer <em>et al</em>.</p>
+
+<p>J&rsquo;ai téléchargé les génomes de référence du donneur et du receveur
+publiés en 2003 et 1999 respectivement. J&rsquo;ai ensuite téléchargé les
+données publiées dans le papier de Bubendorfer. J&rsquo;ai aligné chacun des
+génomes indépendamment &ndash; y compris le génome du donneur &ndash; avec la
+référence (le génome du receveur) en utilisant <code>bwa mem</code>. J&rsquo;ai ensuite
+&ldquo;empilé&rdquo; les génomes sur la référence avec <code>samtools</code>, ce qui m&rsquo;a
+permis de déterminer les positions variables avec <code>bcftools</code>.</p>
+
+<p>J&rsquo;ai donc maintenant un gros fichier <code>.vcf</code> que j&rsquo;ai importé dans R avec le package <code>VariantAnnotation</code>.</p>
+
+<pre><code>&gt; vcf
+class: CollapsedVCF
+dim: 55655 63
+rowRanges(vcf):
+  GRanges with 5 metadata columns: paramRangeID, REF, ALT, QUAL, FILTER
+info(vcf):
+  DataFrame with 17 columns: INDEL, IDV, IMF, DP, VDB, RPB, MQB, BQB, MQSB, SGB, MQ0F,...
+info(header(vcf)):
+         Number Type    Description
+   INDEL 0      Flag    Indicates that the variant is an INDEL.
+   IDV   1      Integer Maximum number of reads supporting an indel
+   IMF   1      Float   Maximum fraction of reads supporting an indel
+   DP    1      Integer Raw read depth
+   VDB   1      Float   Variant Distance Bias for filtering splice-site artefacts in R...
+   RPB   1      Float   Mann-Whitney U test of Read Position Bias (bigger is better)
+   MQB   1      Float   Mann-Whitney U test of Mapping Quality Bias (bigger is better)
+   BQB   1      Float   Mann-Whitney U test of Base Quality Bias (bigger is better)
+   MQSB  1      Float   Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger ...
+   SGB   1      Float   Segregation based metric.
+   MQ0F  1      Float   Fraction of MQ0 reads (smaller is better)
+   ICB   1      Float   Inbreeding Coefficient Binomial test (bigger is better)
+   HOB   1      Float   Bias in the number of HOMs number (smaller is better)
+   AC    A      Integer Allele count in genotypes for each ALT allele, in the same ord...
+   AN    1      Integer Total number of alleles in called genotypes
+   DP4   4      Integer Number of high-quality ref-forward , ref-reverse, alt-forward ...
+   MQ    1      Integer Average mapping quality
+geno(vcf):
+  SimpleList of length 2: GT, PL
+geno(header(vcf)):
+      Number Type    Description
+   GT 1      String  Genotype
+   PL G      Integer List of Phred-scaled genotype likelihoods
+</code></pre>
+
+<p>J&rsquo;ai ensuite splitté le jeu de donnée par clone, pour avoir ce genre de tableau :</p>
+
+<pre><code>&gt; vr
+CompressedVRangesList object of length 63:
+$FLKJ01000001-FLKJ01000087.fasta
+VRanges object with 55848 ranges and 20 metadata columns:
+            seqnames             ranges strand         ref              alt
+               &lt;Rle&gt;          &lt;IRanges&gt;  &lt;Rle&gt; &lt;character&gt; &lt;characterOrRle&gt;
+      [1] CP003904.1         [182, 182]      *           T                C
+      [2] CP003904.1         [205, 205]      *           T                C
+      [3] CP003904.1         [213, 213]      *           A                G
+      [4] CP003904.1         [218, 218]      *           C                T
+      [5] CP003904.1         [221, 221]      *           T                A
+      ...        ...                ...    ...         ...              ...
+  [55844] CP003904.1 [1666966, 1666966]      *           C                T
+  [55845] CP003904.1 [1666972, 1666972]      *           G                A
+  [55846] CP003904.1 [1666973, 1666973]      *           T                C
+  [55847] CP003904.1 [1666994, 1666994]      *           A                G
+  [55848] CP003904.1 [1667001, 1667001]      *           C                T
+</code></pre>
+
+<p>La colonne importante et qu&rsquo;on ne voit pas ici est là colonne GT, qui
+permet de dire si la position séquencée correspond à l&rsquo;allèle du
+donneur, à une mutation ou à l&rsquo;allèle du receveur. Les mutations
+peuvent survenir <em>de novo</em> dans le clone séquencé, ou provenir de la
+divergence entre le génome du clone receveur et celui publié il y a 17
+ans.</p>
+
+<p>On a donc vu avec Laurent et Vincent la suite des opérations.</p>
+
+<p>Le premier problème à régler est de de discriminer les sites
+correspondants à de la conversion des sites correspondants à des
+mutations, ancestrales ou <em>de novo</em>. On peut les discriminer sur la
+base de leur fréquence et de leur similarité avec le donneur. Les
+conversions devraient être en fréquence faible et correspondrent à
+l&rsquo;allèle donneur. Les mutations <em>de novo</em> devraient être différentes
+du donneur et en faible fréquence. Les mutations ancestrales
+devraient être en forte fréquence. On s&rsquo;attend également à ce qu&rsquo;au
+moins 96% de ces mutations soient différentes de l&rsquo;allèle du donneur.</p>
+
+<p>Le but est d&rsquo;obtenir une liste de sites pour lesquels on est sûr
+qu&rsquo;ils correspondent à de la conversion. À partir de là, on peut
+déterminer les évènements de recombinaison.</p>
+
+<p>Dans le papier, ils déterminent que deux marqueurs sont impliqués dans
+le même évènement de recombinaison s&rsquo;ils sont séparés par moins de
+200bp, ou s&rsquo;ils sont distants de plus de 200bp mais qu&rsquo;aucun autre
+marqueur n&rsquo;est présent entre eux.</p>
+
+<p>J&rsquo;utiliserai donc les mêmes critères, quitte à faire varier le seuil
+arbitraire de 200bp pour vérifier que la distribution de la longueur
+des évènements de recombinaison ne soit pas affectée par le seuil
+choisi.</p>
+
+<p>L&rsquo;idée est ensuite de compter les évènements de recombinaison partagés
+et indépendants d&rsquo;un clone à l&rsquo;autre. Il se pourrait qu&rsquo;une région ait
+été acquise au cours des premiers stades de la manip, et transmise à
+l&rsquo;ensemble des clones séquencés (dans le &ldquo;pire&rdquo; des cas). Dans ce cas,
+on compterait plusieurs évènements de recombinaison comme indépendants
+alors qu&rsquo;en fait, non. Au vu des résultats du papier, on ne s&rsquo;attend
+pas à ça. On va également contrôler pour ça avec la phylogénie globale
+(génome entier), qui ne devrait pas donner de signal fort si les
+évènements sont bien indépendants.</p>
+
+<p>À ce stade, on devrait être capable de déterminer la nature des bases
+impliquées dans un évènement de recombinaison. On pourra donc
+déterminer la proportion de substitutions Weak vers Strong et Strong
+vers Weak, et comparer cette proportion avec la proportion de
+substitutions WS et SW entre le donneur et le receveur. Ça peut être
+fait globalement ou clone par clone s&rsquo;ils s&rsquo;avèrent non-indépendants.
+Ça peut être fait également plus subtilement : chez la levure, le
+biais était essentiellement observé au niveau des SNPs on bordure des
+tracks.</p>
+
+<p>Au passage, je pourrai comparer la distribution de la longueur des
+tracks de conversion avec celle obtenue dans le papier.</p>
+</section>
+            <section>
+                
+
+                <footer class="footer">
+		<hr>
+		<ul class="page-footer-menu">
+		    
+		</ul>
+
+    
+
+	  <div class="copyright">
+	      <p>
+            
+            &copy; 2016
+            Samuel Barreto.
+            
+        </p>
+    </div>
+</footer>
+
+
+<script src="https://sam217pa.github.io/lab-notebook/js/jquery.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/tablesaw-stackonly.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/nudge.min.js"></script> 
+
+            </section>
+        </article>
+    </div>
+</body>
+</html>

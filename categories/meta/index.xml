@@ -5,8 +5,139 @@
     <link>https://sam217pa.github.io/lab-notebook/categories/meta/</link>
     <description>Recent content in Meta on Lab notebook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 04 Oct 2016 17:55:08 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 02 Nov 2016 13:41:04 +0100</lastBuildDate>
     <atom:link href="https://sam217pa.github.io/lab-notebook/categories/meta/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Projet Bubendorfer</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-11-02/</link>
+      <pubDate>Wed, 02 Nov 2016 13:41:04 +0100</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-11-02/</guid>
+      <description>&lt;p&gt;Ordre du jour : faire l&amp;rsquo;état des lieux de l&amp;rsquo;avancement sur l&amp;rsquo;analyse des données de Bubendorfer &lt;em&gt;et al&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai téléchargé les génomes de référence du donneur et du receveur
+publiés en 2003 et 1999 respectivement. J&amp;rsquo;ai ensuite téléchargé les
+données publiées dans le papier de Bubendorfer. J&amp;rsquo;ai aligné chacun des
+génomes indépendamment &amp;ndash; y compris le génome du donneur &amp;ndash; avec la
+référence (le génome du receveur) en utilisant &lt;code&gt;bwa mem&lt;/code&gt;. J&amp;rsquo;ai ensuite
+&amp;ldquo;empilé&amp;rdquo; les génomes sur la référence avec &lt;code&gt;samtools&lt;/code&gt;, ce qui m&amp;rsquo;a
+permis de déterminer les positions variables avec &lt;code&gt;bcftools&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai donc maintenant un gros fichier &lt;code&gt;.vcf&lt;/code&gt; que j&amp;rsquo;ai importé dans R avec le package &lt;code&gt;VariantAnnotation&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; vcf
+class: CollapsedVCF
+dim: 55655 63
+rowRanges(vcf):
+  GRanges with 5 metadata columns: paramRangeID, REF, ALT, QUAL, FILTER
+info(vcf):
+  DataFrame with 17 columns: INDEL, IDV, IMF, DP, VDB, RPB, MQB, BQB, MQSB, SGB, MQ0F,...
+info(header(vcf)):
+         Number Type    Description
+   INDEL 0      Flag    Indicates that the variant is an INDEL.
+   IDV   1      Integer Maximum number of reads supporting an indel
+   IMF   1      Float   Maximum fraction of reads supporting an indel
+   DP    1      Integer Raw read depth
+   VDB   1      Float   Variant Distance Bias for filtering splice-site artefacts in R...
+   RPB   1      Float   Mann-Whitney U test of Read Position Bias (bigger is better)
+   MQB   1      Float   Mann-Whitney U test of Mapping Quality Bias (bigger is better)
+   BQB   1      Float   Mann-Whitney U test of Base Quality Bias (bigger is better)
+   MQSB  1      Float   Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger ...
+   SGB   1      Float   Segregation based metric.
+   MQ0F  1      Float   Fraction of MQ0 reads (smaller is better)
+   ICB   1      Float   Inbreeding Coefficient Binomial test (bigger is better)
+   HOB   1      Float   Bias in the number of HOMs number (smaller is better)
+   AC    A      Integer Allele count in genotypes for each ALT allele, in the same ord...
+   AN    1      Integer Total number of alleles in called genotypes
+   DP4   4      Integer Number of high-quality ref-forward , ref-reverse, alt-forward ...
+   MQ    1      Integer Average mapping quality
+geno(vcf):
+  SimpleList of length 2: GT, PL
+geno(header(vcf)):
+      Number Type    Description
+   GT 1      String  Genotype
+   PL G      Integer List of Phred-scaled genotype likelihoods
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;J&amp;rsquo;ai ensuite splitté le jeu de donnée par clone, pour avoir ce genre de tableau :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; vr
+CompressedVRangesList object of length 63:
+$FLKJ01000001-FLKJ01000087.fasta
+VRanges object with 55848 ranges and 20 metadata columns:
+            seqnames             ranges strand         ref              alt
+               &amp;lt;Rle&amp;gt;          &amp;lt;IRanges&amp;gt;  &amp;lt;Rle&amp;gt; &amp;lt;character&amp;gt; &amp;lt;characterOrRle&amp;gt;
+      [1] CP003904.1         [182, 182]      *           T                C
+      [2] CP003904.1         [205, 205]      *           T                C
+      [3] CP003904.1         [213, 213]      *           A                G
+      [4] CP003904.1         [218, 218]      *           C                T
+      [5] CP003904.1         [221, 221]      *           T                A
+      ...        ...                ...    ...         ...              ...
+  [55844] CP003904.1 [1666966, 1666966]      *           C                T
+  [55845] CP003904.1 [1666972, 1666972]      *           G                A
+  [55846] CP003904.1 [1666973, 1666973]      *           T                C
+  [55847] CP003904.1 [1666994, 1666994]      *           A                G
+  [55848] CP003904.1 [1667001, 1667001]      *           C                T
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;La colonne importante et qu&amp;rsquo;on ne voit pas ici est là colonne GT, qui
+permet de dire si la position séquencée correspond à l&amp;rsquo;allèle du
+donneur, à une mutation ou à l&amp;rsquo;allèle du receveur. Les mutations
+peuvent survenir &lt;em&gt;de novo&lt;/em&gt; dans le clone séquencé, ou provenir de la
+divergence entre le génome du clone receveur et celui publié il y a 17
+ans.&lt;/p&gt;
+
+&lt;p&gt;On a donc vu avec Laurent et Vincent la suite des opérations.&lt;/p&gt;
+
+&lt;p&gt;Le premier problème à régler est de de discriminer les sites
+correspondants à de la conversion des sites correspondants à des
+mutations, ancestrales ou &lt;em&gt;de novo&lt;/em&gt;. On peut les discriminer sur la
+base de leur fréquence et de leur similarité avec le donneur. Les
+conversions devraient être en fréquence faible et correspondrent à
+l&amp;rsquo;allèle donneur. Les mutations &lt;em&gt;de novo&lt;/em&gt; devraient être différentes
+du donneur et en faible fréquence. Les mutations ancestrales
+devraient être en forte fréquence. On s&amp;rsquo;attend également à ce qu&amp;rsquo;au
+moins 96% de ces mutations soient différentes de l&amp;rsquo;allèle du donneur.&lt;/p&gt;
+
+&lt;p&gt;Le but est d&amp;rsquo;obtenir une liste de sites pour lesquels on est sûr
+qu&amp;rsquo;ils correspondent à de la conversion. À partir de là, on peut
+déterminer les évènements de recombinaison.&lt;/p&gt;
+
+&lt;p&gt;Dans le papier, ils déterminent que deux marqueurs sont impliqués dans
+le même évènement de recombinaison s&amp;rsquo;ils sont séparés par moins de
+200bp, ou s&amp;rsquo;ils sont distants de plus de 200bp mais qu&amp;rsquo;aucun autre
+marqueur n&amp;rsquo;est présent entre eux.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;utiliserai donc les mêmes critères, quitte à faire varier le seuil
+arbitraire de 200bp pour vérifier que la distribution de la longueur
+des évènements de recombinaison ne soit pas affectée par le seuil
+choisi.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;idée est ensuite de compter les évènements de recombinaison partagés
+et indépendants d&amp;rsquo;un clone à l&amp;rsquo;autre. Il se pourrait qu&amp;rsquo;une région ait
+été acquise au cours des premiers stades de la manip, et transmise à
+l&amp;rsquo;ensemble des clones séquencés (dans le &amp;ldquo;pire&amp;rdquo; des cas). Dans ce cas,
+on compterait plusieurs évènements de recombinaison comme indépendants
+alors qu&amp;rsquo;en fait, non. Au vu des résultats du papier, on ne s&amp;rsquo;attend
+pas à ça. On va également contrôler pour ça avec la phylogénie globale
+(génome entier), qui ne devrait pas donner de signal fort si les
+évènements sont bien indépendants.&lt;/p&gt;
+
+&lt;p&gt;À ce stade, on devrait être capable de déterminer la nature des bases
+impliquées dans un évènement de recombinaison. On pourra donc
+déterminer la proportion de substitutions Weak vers Strong et Strong
+vers Weak, et comparer cette proportion avec la proportion de
+substitutions WS et SW entre le donneur et le receveur. Ça peut être
+fait globalement ou clone par clone s&amp;rsquo;ils s&amp;rsquo;avèrent non-indépendants.
+Ça peut être fait également plus subtilement : chez la levure, le
+biais était essentiellement observé au niveau des SNPs on bordure des
+tracks.&lt;/p&gt;
+
+&lt;p&gt;Au passage, je pourrai comparer la distribution de la longueur des
+tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Compte-rendu réunion du 03 octobre</title>
