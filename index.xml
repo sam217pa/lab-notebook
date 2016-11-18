@@ -5,8 +5,127 @@
     <link>https://sam217pa.github.io/lab-notebook/</link>
     <description>Recent content on Lab notebook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Nov 2016 13:41:04 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 17 Nov 2016 16:16:24 +0100</lastBuildDate>
     <atom:link href="https://sam217pa.github.io/lab-notebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Manip pilote faisabilité séquençage MiSeq</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-11-17/</link>
+      <pubDate>Thu, 17 Nov 2016 16:16:24 +0100</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-11-17/</guid>
+      <description>&lt;p&gt;Ordre du jour : discuter de l&amp;rsquo;état d&amp;rsquo;avancement des manips et de la suite du projet de séquençage MiSeq.&lt;/p&gt;
+
+
+
+
+  
+    &lt;figure &gt;
+  
+
+
+
+  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+
+  
+  
+  
+  
+  
+
+  &lt;/span&gt;
+
+
+  
+  &lt;img src=&#34;https://sam217pa.github.io/lab-notebook/img/pWkanancre.svg&#34; &gt;
+  
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;J&amp;rsquo;ai extrait les quatre plasmides pS, pW, pWS et pSW. J&amp;rsquo;ai ensuite
+amplifié l&amp;rsquo;ensemble de la région d&amp;rsquo;intérêt avec les amorces 1411 -
+1393 (R+) et la région d&amp;rsquo;intérêt réduite (R-) avec les amorces 1411 -
+1394.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai transformé des suspensions d&amp;rsquo;&lt;em&gt;Acinetobacter&lt;/em&gt; par les plasmides,
+les produits PCR de R+ et les produit PCR de R-. J&amp;rsquo;ai pu obtenir des
+transformants dans tous les cas.&lt;/p&gt;
+
+
+
+
+  
+    &lt;figure &gt;
+  
+
+
+
+  &lt;label for=&#34;&#34; class=&#34;margin-toggle&#34;&gt;⊕&lt;/label&gt;
+  &lt;input type=&#34;checkbox&#34; id=&#34;&#34; class=&#34;margin-toggle&#34;&gt;
+  &lt;span class=&#34;marginnote&#34;&gt;
+  
+
+  
+  
+  
+  
+  
+
+  &lt;/span&gt;
+
+
+  
+  &lt;img src=&#34;https://sam217pa.github.io/lab-notebook/img/comptages_ufc_per_ml.svg&#34; &gt;
+  
+
+
+
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;J&amp;rsquo;ai ensuite resuspendu les transformants dans 1 mL d&amp;rsquo;eau pour chacune
+des boîtes. Après centrifugation, le culot bactérien obtenu étant
+&lt;em&gt;assez&lt;/em&gt; épais, j&amp;rsquo;ai utilisé 100 µL de la suspension pour extraire
+l&amp;rsquo;ADN de chaque pool. Après quoi j&amp;rsquo;ai amplifié en PCR le locus
+d&amp;rsquo;intérêt avec l&amp;rsquo;amorce 1394fwd et 1392 + adaptateurs de séquençage.
+Toutes les amplifications ont fonctionné, j&amp;rsquo;ai pu obtenir des
+fragments à la taille attendue dans tous les cas.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ça nous a permis&lt;/strong&gt; de valider la commande de cinq amplicons à séquencer
+à l&amp;rsquo;école centrale. Il faut apporter les amplicons au plus tard le 24
+ou 25 novembre.&lt;/p&gt;
+
+&lt;p&gt;Ce qui nous laisse le temps de refaire la même transformation, en
+utilisant pour donneur les régions R- ; des milieux plus grand (⌀ 145
+mm) ; une autre méthode d&amp;rsquo;étalement qui permet 1) de récupérer tous
+les clones de la suspension (étalement d&amp;rsquo;1 mL) et 2) d&amp;rsquo;uniformiser la
+distribution des clones dans la boîte. C&amp;rsquo;est important puisqu&amp;rsquo;il faut
+que les colonies aient la même taille pour que la répartition de
+chaque transformant dans le pool final soit équitable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ce séquençage&lt;/strong&gt; permettra d&amp;rsquo;avoir une idée de la faisabilité de la
+manip&amp;rsquo; avant de la reproduire avec les constructions porteuses de
+flags, d&amp;rsquo;avoir une idée des données à analyse, de la diversité des
+reads, de la qualité du séquençage etc…&lt;/p&gt;
+
+&lt;p&gt;Normalement on devrait pouvoir discriminer les erreurs de séquençage
+des mutations spontanées par le nombre de reads qui portent l&amp;rsquo;erreur.
+Une erreur de séquençage devrait se répartir aléatoirement entre les
+reads ; une mutation spontanée devrait être retrouvée sur tous les
+reads correspondant à un transformant donné.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Il faut maintenant&lt;/strong&gt; avoir une idée des tarifs pratiqués par geneWiz,
+et donc que j&amp;rsquo;envoie les séquences des régions de synthèse.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Projet Bubendorfer</title>
