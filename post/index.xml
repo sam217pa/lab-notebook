@@ -1,12 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Lab notebook</title>
-    <link>https://sam217pa.github.io/lab-notebook/post/</link>
-    <description>Recent content in Posts on Lab notebook</description>
+    <title>Post-rsses on Lab notebook</title>
+    <link>https://sam217pa.github.io/lab-notebook/post/index.xml</link>
+    <description>Recent content in Post-rsses on Lab notebook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Nov 2016 16:16:24 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 06 Dec 2016 13:15:07 +0100</lastBuildDate>
     <atom:link href="https://sam217pa.github.io/lab-notebook/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Compte rendu réunion projet</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2016-12-05/</link>
+      <pubDate>Tue, 06 Dec 2016 13:15:07 +0100</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2016-12-05/</guid>
+      <description>&lt;p&gt;Ordre du jour : discuter du début des manips dans le modèle &lt;em&gt;E. coli&lt;/em&gt;
+et discuter de la suite du projet dans le modèle &lt;em&gt;A. baylyi&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pour le modèle &lt;em&gt;E. coli&lt;/em&gt;&lt;/strong&gt;, nous allons tenter d&amp;rsquo;obtenir des
+recombinants d&amp;rsquo;abord par une simple insertion, comme il était prévu
+initialement chez &lt;em&gt;Acinetobacter&lt;/em&gt;. On utilise le plasmide pKNOCK-Km
+qui porte une cassette de résistance à la kanamycine, et qui ne se
+réplique qu&amp;rsquo;en présence du produit du gène &lt;em&gt;pyr&lt;/em&gt;. La souche donneuse
+du plasmide est la souche S17.1 qui porte le gène &lt;em&gt;pyr&lt;/em&gt;, la souche
+receveuse K12 n&amp;rsquo;a pas le gène &lt;em&gt;pyr&lt;/em&gt; ; le seul moyen qu&amp;rsquo;un conjugant
+soit résistant à la kanamycine est que le plasmide soit recombiné. Les
+recombinants K12 seront sélectionnés par culture sur milieu
+LBKan25Cm30 (Chloramphénicol pour sélectionner uniquement les K12). On
+pourra valider la construction si le nombre de transformant est
+suffisamment élevé et si les produits PCR sont stables.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pour le modèle &lt;em&gt;A. baylyi&lt;/em&gt;&lt;/strong&gt;, j&amp;rsquo;ai transformé un plus grand volume
+de culture 1100 µL par 600 ng de produits PCR W, S, SW et WS. J&amp;rsquo;ai
+obtenu un tapis bactérien sur grandes boîtes de 145 mm, que j&amp;rsquo;ai râclé
+et suspendu dans un volume de 2 mL. J&amp;rsquo;ai ensuite vortexé et extrait
+l&amp;rsquo;ADN génomique de 100 µL de culture. J&amp;rsquo;ai enfin amplifié notre locus
+d&amp;rsquo;intérêt avec les amorces porteuses d&amp;rsquo;adaptateurs de séquençage. Les
+amplicons ont été envoyés à séquencer le jeudi 24 novembre. Nous avons
+eu aujourd&amp;rsquo;hui l&amp;rsquo;information que les produits ne seront pas séquencés
+avant janvier.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai aussi reçu les devis de GeneWiz pour deux types de design. Le
+premier consisterait uniquement à insérer des N et un site d&amp;rsquo;accroche
+d&amp;rsquo;amorce au site de restriction SpeI. Le second consisterait à insérer
+le fragment entier, 10 N et un site d&amp;rsquo;accroche de primer dans le
+plasmide vide ouvert composé d&amp;rsquo;une cassette de résistance et d&amp;rsquo;une
+région ancre de notre choix (chez &lt;em&gt;E. coli&lt;/em&gt; ou d&amp;rsquo;autres régions
+d&amp;rsquo;&lt;em&gt;Acinetobacter&lt;/em&gt;). Nous avons donc décidé de commander deux premières
+séquences selon le premier design, pour construire les fragments pWS-N
+et pSW-N.&lt;/p&gt;
+
+&lt;p&gt;Il me reste à construire les plasmides 100% identiques pour l&amp;rsquo;instant
+aux ilôts 2 et 3 du génome d&amp;rsquo;&lt;em&gt;Acinetobacter&lt;/em&gt;. Cela consiste à
+introduire la séquence ancre cible dans le plasmide pGEM-T avec la
+cassette de résistance à la kanamycine. Lorsque les plasmides seront
+construits, il suffira d&amp;rsquo;ouvrir par l&amp;rsquo;enzyme SpeI pour insérer la
+séquence de notre choix — que ce soit une autre séquence ou un
+fragment GeneWiz.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Manip pilote faisabilité séquençage MiSeq</title>
@@ -15,6 +68,8 @@
       
       <guid>https://sam217pa.github.io/lab-notebook/post/2016-11-17/</guid>
       <description>&lt;p&gt;Ordre du jour : discuter de l&amp;rsquo;état d&amp;rsquo;avancement des manips et de la suite du projet de séquençage MiSeq.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 
 
@@ -123,8 +178,7 @@ reads ; une mutation spontanée devrait être retrouvée sur tous les
 reads correspondant à un transformant donné.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Il faut maintenant&lt;/strong&gt; avoir une idée des tarifs pratiqués par geneWiz,
-et donc que j&amp;rsquo;envoie les séquences des régions de synthèse.&lt;/p&gt;
-</description>
+et donc que j&amp;rsquo;envoie les séquences des régions de synthèse.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -134,6 +188,8 @@ et donc que j&amp;rsquo;envoie les séquences des régions de synthèse.&lt;/p&g
       
       <guid>https://sam217pa.github.io/lab-notebook/post/2016-11-02/</guid>
       <description>&lt;p&gt;Ordre du jour : faire l&amp;rsquo;état des lieux de l&amp;rsquo;avancement sur l&amp;rsquo;analyse des données de Bubendorfer &lt;em&gt;et al&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;J&amp;rsquo;ai téléchargé les génomes de référence du donneur et du receveur
 publiés en 2003 et 1999 respectivement. J&amp;rsquo;ai ensuite téléchargé les
@@ -254,8 +310,7 @@ biais était essentiellement observé au niveau des SNPs on bordure des
 tracks.&lt;/p&gt;
 
 &lt;p&gt;Au passage, je pourrai comparer la distribution de la longueur des
-tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;
-</description>
+tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -265,6 +320,8 @@ tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;
       
       <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-07/</guid>
       <description>&lt;p&gt;Quelles sont les avancées de la semaine ?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Pour le séquençage&lt;/span&gt;
 , on a vu avec Sandrine Demanèche de l&amp;rsquo;école centrale qu&amp;rsquo;il était préférable d&amp;rsquo;utiliser la chimie 2 x 250 à la 2 x 300. D&amp;rsquo;après elle il est bien connu qu&amp;rsquo;elle est plus fiable et moins error-prone. Elle nous a aussi confirmé — malheureusement — qu&amp;rsquo;il vaut mieux avoir un recouvrement entre le forward et reverse.&lt;/p&gt;
@@ -352,8 +409,7 @@ tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;
 &lt;p&gt;Pour la technologie de séquençage, je n&amp;rsquo;ai rien trouvé de transcendant chez Illumina. Il faudra utiliser les protocoles de séquençages en métagénomique (ADN r16S), on reste sur du séquençage d&amp;rsquo;amplicon classique.&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&#34;newthought&#34;&gt;Pour le gène synthétique&lt;/span&gt;
-, je suis entré en contact avec le service technique de GeneWiz. Je leur ai expliqué globalement la construction de nos rêves, et ai eu une réponse le lendemain. Ils pensent pouvoir le faire, mais préfèrent discuter avec moi / nous du projet d&amp;rsquo;abord. Ils sont en train d&amp;rsquo;organiser une visio-conférence.&lt;/p&gt;
-</description>
+, je suis entré en contact avec le service technique de GeneWiz. Je leur ai expliqué globalement la construction de nos rêves, et ai eu une réponse le lendemain. Ils pensent pouvoir le faire, mais préfèrent discuter avec moi / nous du projet d&amp;rsquo;abord. Ils sont en train d&amp;rsquo;organiser une visio-conférence.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -368,6 +424,8 @@ marqueurs analysés au total par souche dans la publication de
 Bubendorfer &lt;em&gt;et al&lt;/em&gt;. Le but est de déterminer si ce genre de manip&amp;rsquo;
 peut avoir assez de puissance pour estimer un biais de conversion.&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;Il est reporté que les deux souches utilisées sont divergentes à 4.5%. Selon l&amp;rsquo;estimation de la longueur des régions converties (minimale ou maximale), on peut donc avancer deux estimateurs.&lt;/p&gt;
 
 &lt;p&gt;Pour la manip&amp;rsquo; de transformations répétées, ils reportent que la
@@ -376,8 +434,7 @@ longueur moyenne totale des polymorphismes est au minimum de 55,644 ± 36,108.
 &lt;p&gt;Donc avec un polymorphisme toutes les 22bp, ça donne 2529 ± 1641
 marqueurs combinés sur les 20 souches séquencées. Au maximum, 2737 ± 1734 marqueurs analysés sur les 20 souches.&lt;/p&gt;
 
-&lt;p&gt;Dans tous les cas, c&amp;rsquo;est très loin des 6818 marqueurs obtenus obtenus avec nos manips de séquençage en Sanger.&lt;/p&gt;
-</description>
+&lt;p&gt;Dans tous les cas, c&amp;rsquo;est très loin des 6818 marqueurs obtenus obtenus avec nos manips de séquençage en Sanger.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -387,6 +444,8 @@ marqueurs combinés sur les 20 souches séquencées. Au maximum, 2737 ± 1734 
       
       <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-04/</guid>
       <description>&lt;p&gt;Ordre du jour : discuter des stratégies pour mesurer le BGC &lt;em&gt;in-vitro&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;La stratégie Sanger a permis de déterminer la distribution des points de cassure, d&amp;rsquo;avoir une idée approximative de l&amp;rsquo;intensité du biais à laquelle on peut s&amp;rsquo;attendre&lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
 &lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
@@ -456,8 +515,7 @@ l&amp;rsquo;échelle du génome entier chez &lt;em&gt;H.pylori&lt;/em&gt;. On pe
 
 &lt;p&gt;Dans un premier temps, on veut estimer le nombre de positions de marqueurs qu&amp;rsquo;ils ont pu analyser en séquençant 20 génomes entiers, ainsi que le coût associé.&lt;/p&gt;
 
-&lt;p&gt;Dans un second temps et si l&amp;rsquo;estimation paraît favorable, on peut creuser leurs données et faire nos &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2016/01/25/on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/&#34;&gt;reasearch parasites&lt;/a&gt;&amp;rdquo;, pour voir si leurs marqueurs ne montreraient pas par hasard un biais quelconque.&lt;/p&gt;
-</description>
+&lt;p&gt;Dans un second temps et si l&amp;rsquo;estimation paraît favorable, on peut creuser leurs données et faire nos &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2016/01/25/on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/&#34;&gt;reasearch parasites&lt;/a&gt;&amp;rdquo;, pour voir si leurs marqueurs ne montreraient pas par hasard un biais quelconque.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -466,10 +524,10 @@ l&amp;rsquo;échelle du génome entier chez &lt;em&gt;H.pylori&lt;/em&gt;. On pe
       <pubDate>Mon, 03 Oct 2016 01:30:04 +0200</pubDate>
       
       <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-03/</guid>
-      <description>
-
-&lt;p&gt;Quelles sont les deux approches envisagées à ce jour pour étudier la
+      <description>&lt;p&gt;Quelles sont les deux approches envisagées à ce jour pour étudier la
 conversion génique &lt;em&gt;in-vitro&lt;/em&gt; ?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;approche-locus-dépendante&#34;&gt;Approche locus dépendante&lt;/h1&gt;
 
@@ -711,8 +769,7 @@ non-sélectionnés.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:Commit-du-thu-ma&#34;&gt;Commit du thu may 26. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Commit-du-thu-ma&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
     </item>
     
   </channel>

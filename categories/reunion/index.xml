@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reunion on Lab notebook</title>
-    <link>https://sam217pa.github.io/lab-notebook/categories/reunion/</link>
-    <description>Recent content in Reunion on Lab notebook</description>
+    <title>Lab notebook</title>
+    <link>https://sam217pa.github.io/lab-notebook/categories/reunion/index.xml</link>
+    <description>Recent content on Lab notebook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Nov 2016 13:41:04 +0100</lastBuildDate>
     <atom:link href="https://sam217pa.github.io/lab-notebook/categories/reunion/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,6 +14,8 @@
       
       <guid>https://sam217pa.github.io/lab-notebook/post/2016-11-02/</guid>
       <description>&lt;p&gt;Ordre du jour : faire l&amp;rsquo;état des lieux de l&amp;rsquo;avancement sur l&amp;rsquo;analyse des données de Bubendorfer &lt;em&gt;et al&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;J&amp;rsquo;ai téléchargé les génomes de référence du donneur et du receveur
 publiés en 2003 et 1999 respectivement. J&amp;rsquo;ai ensuite téléchargé les
@@ -135,8 +136,7 @@ biais était essentiellement observé au niveau des SNPs on bordure des
 tracks.&lt;/p&gt;
 
 &lt;p&gt;Au passage, je pourrai comparer la distribution de la longueur des
-tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;
-</description>
+tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -146,6 +146,8 @@ tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;
       
       <guid>https://sam217pa.github.io/lab-notebook/post/2016-10-04/</guid>
       <description>&lt;p&gt;Ordre du jour : discuter des stratégies pour mesurer le BGC &lt;em&gt;in-vitro&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;La stratégie Sanger a permis de déterminer la distribution des points de cassure, d&amp;rsquo;avoir une idée approximative de l&amp;rsquo;intensité du biais à laquelle on peut s&amp;rsquo;attendre&lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
 &lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
@@ -215,8 +217,7 @@ l&amp;rsquo;échelle du génome entier chez &lt;em&gt;H.pylori&lt;/em&gt;. On pe
 
 &lt;p&gt;Dans un premier temps, on veut estimer le nombre de positions de marqueurs qu&amp;rsquo;ils ont pu analyser en séquençant 20 génomes entiers, ainsi que le coût associé.&lt;/p&gt;
 
-&lt;p&gt;Dans un second temps et si l&amp;rsquo;estimation paraît favorable, on peut creuser leurs données et faire nos &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2016/01/25/on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/&#34;&gt;reasearch parasites&lt;/a&gt;&amp;rdquo;, pour voir si leurs marqueurs ne montreraient pas par hasard un biais quelconque.&lt;/p&gt;
-</description>
+&lt;p&gt;Dans un second temps et si l&amp;rsquo;estimation paraît favorable, on peut creuser leurs données et faire nos &amp;ldquo;&lt;a href=&#34;http://simplystatistics.org/2016/01/25/on-research-parasites-and-internet-mobs-lets-try-to-solve-the-real-problem/&#34;&gt;reasearch parasites&lt;/a&gt;&amp;rdquo;, pour voir si leurs marqueurs ne montreraient pas par hasard un biais quelconque.&lt;/p&gt;</description>
     </item>
     
   </channel>

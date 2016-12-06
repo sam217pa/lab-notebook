@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bubendorfer on Lab notebook</title>
-    <link>https://sam217pa.github.io/lab-notebook/categories/bubendorfer/</link>
-    <description>Recent content in Bubendorfer on Lab notebook</description>
+    <title>Lab notebook</title>
+    <link>https://sam217pa.github.io/lab-notebook/categories/bubendorfer/index.xml</link>
+    <description>Recent content on Lab notebook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Nov 2016 13:41:04 +0100</lastBuildDate>
     <atom:link href="https://sam217pa.github.io/lab-notebook/categories/bubendorfer/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,6 +14,8 @@
       
       <guid>https://sam217pa.github.io/lab-notebook/post/2016-11-02/</guid>
       <description>&lt;p&gt;Ordre du jour : faire l&amp;rsquo;état des lieux de l&amp;rsquo;avancement sur l&amp;rsquo;analyse des données de Bubendorfer &lt;em&gt;et al&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;J&amp;rsquo;ai téléchargé les génomes de référence du donneur et du receveur
 publiés en 2003 et 1999 respectivement. J&amp;rsquo;ai ensuite téléchargé les
@@ -135,8 +136,7 @@ biais était essentiellement observé au niveau des SNPs on bordure des
 tracks.&lt;/p&gt;
 
 &lt;p&gt;Au passage, je pourrai comparer la distribution de la longueur des
-tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;
-</description>
+tracks de conversion avec celle obtenue dans le papier.&lt;/p&gt;</description>
     </item>
     
   </channel>
