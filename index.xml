@@ -5,8 +5,139 @@
     <link>https://sam217pa.github.io/lab-notebook/index.xml</link>
     <description>Recent content on Lab notebook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Dec 2016 13:15:07 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jan 2017 18:47:29 +0100</lastBuildDate>
     <atom:link href="https://sam217pa.github.io/lab-notebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Archæa, Helicobacter, Bacillus, E.coli &amp; consorts</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2017-01-16/</link>
+      <pubDate>Mon, 16 Jan 2017 18:47:29 +0100</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2017-01-16/</guid>
+      <description>&lt;p&gt;Ordre du jour : discuter de l&amp;rsquo;avancement des manips sur le modèle &lt;em&gt;E.coli&lt;/em&gt;, des
+analyses des données de &lt;em&gt;H.pylori&lt;/em&gt; et choisir le troisième modèle.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chez &lt;em&gt;E.coli&lt;/em&gt;&lt;/strong&gt;, on a réussi par conjugaison à obtenir un nombre de clones
+satisfaisant, similaire à celui obtenu chez &lt;em&gt;Acinetobacter&lt;/em&gt;. Donc à priori la
+stratégie qu&amp;rsquo;on utilise permet d&amp;rsquo;obtenir le nombre de transformant qui nous
+intéresse, et on peut reconstruire l&amp;rsquo;ensemble de l&amp;rsquo;hétéroduplex.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;ennui c&amp;rsquo;est qu&amp;rsquo;on obtient davantage de transformants en utilisant un plasmide
+vide (sans région homologue au génome receveur).&lt;/p&gt;
+
+&lt;p&gt;En fait la majorité du plasmide pKNOCK-Km qu&amp;rsquo;on utilise a une région homologue
+au génome receveur. Donc on va tester avec un plasmide pKNOCK-Tet, qui introduit
+une résistance à la tétracycline au lieu de la kanamycine, et qui ne présente
+qu&amp;rsquo;une homologie de 300bp.&lt;/p&gt;
+
+&lt;p&gt;Si on obtient des transformants avec ce simple plasmide (sans insert), on doit
+changer de stratégie. Sinon, on peut repartir sur la stratégie de base avec une
+insertion simple.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chez &lt;em&gt;H.pylori&lt;/em&gt;&lt;/strong&gt;, on dispose désormais de la table suivante :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; df
+# A tibble: 4,329,658 × 11
+     pos                    id   ref   alt filter receiver donor sample    gt      exp  type
+   &amp;lt;int&amp;gt;                 &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt;  &amp;lt;chr&amp;gt;    &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;  &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt;    &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt;
+1    346 TAGGGTTTTG.CGTGGGCGTG     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+2    439 TTAAATGCGG.CTCGATGAGG     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+3    448 GCTCGATGAG.GGCGTCAATT     G     A   PASS        0     1   FLKJ     0 BAC555-8   bac
+4    457 GGGCGTCAAT.TTCATTGATT     T     C   PASS        0     1   FLKJ     0 BAC555-8   bac
+5    508 CGAAAGCGAG.TTGGTTGTTT     T     C   PASS        0     1   FLKJ     0 BAC555-8   bac
+6    544 CTAACATGCT.AGAAGCGATT     A     G   PASS        0     1   FLKJ     0 BAC555-8   bac
+7    639 GCCATTTTAA.CCCTTGAGAG     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+8    665 ACAAGCTCAA.CAATTCAATG     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+9    704 AGCCCTTATT.GCCGGCTTTA     G     A   PASS        0     1   FLKJ     0 BAC555-8   bac
+10   749 CAATATTGTC.CGTGGTCAGC     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+# ... with 4,329,648 more rows
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Une sorte d&amp;rsquo;alignement en colonne clone par clone. La colonne &lt;code&gt;ref&lt;/code&gt; indique
+l&amp;rsquo;allèle sur la séquence receveuse, la colonne &lt;code&gt;alt&lt;/code&gt; indique l&amp;rsquo;allèle
+alternatif, présent dans au moins une des séquences. Dans la grande majorité des
+cas, elle correspond à l&amp;rsquo;allèle présent chez le &lt;code&gt;donor&lt;/code&gt; (dont le génotype est
+&lt;code&gt;1&lt;/code&gt;). La colonne &lt;code&gt;gt&lt;/code&gt; indique le genotype de la souche à la position considérée.
+Il est &lt;code&gt;0&lt;/code&gt; quand l&amp;rsquo;allèle est le même que la souche receveuse, &lt;code&gt;1&lt;/code&gt; quand il est
+différent ou &lt;code&gt;2&lt;/code&gt; si deux allèles alternatifs existent à un site donné.&lt;/p&gt;
+
+&lt;p&gt;Ça nous a permis de déterminer manip par manip le nombre de marqueurs AT
+convertis en GC, le nombre de marqueurs GC convertis en AT, le nombre de
+marqueurs AT opposés à des GC mais qui restent AT (conservés) et le nombre de
+marqueurs GC opposés à des AT conservés.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## $tc1
+##               AT     GC
+## conserved 662129 592445
+## converted  23924  21163
+##
+## tc1 chi.square test p.value :
+## [1] 0.2361069
+
+## $tc2
+##               AT     GC
+## conserved 396172 354254
+## converted  15468  13871
+##
+## tc2 chi.square test p.value :
+## [1] 0.8149272
+
+## $tc3
+##               AT     GC
+## conserved 198505 177380
+## converted   7330   6712
+##
+## tc3 chi.square test p.value :
+## [1] 0.1579967
+
+## $stt
+##               AT     GC
+## conserved 717893 642114
+## converted   2982   2540
+##
+## stt chi.square test p.value :
+## [1] 0.07294647
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nulle part on n&amp;rsquo;obtient de signal significatif.&lt;/p&gt;
+
+&lt;p&gt;Chez la levure cependant, le signal de BGC est beaucoup plus fort aux extrémités
+des tracks de conversion. Donc il reste à déterminer la position des marqueurs
+dans la région de conversion (distale, centrale). Ça nous permettrait d&amp;rsquo;avoir
+une idée des paramètres de recombinaison et de comparer avec les valeurs
+publiées dans le papier.&lt;/p&gt;
+
+&lt;p&gt;Il faut également discriminer les évènements non-indépendants dans les manips de
+transformation répétée. On ne compte les marqueurs convertis dans plusieurs
+souches différentes qu&amp;rsquo;une fois. Autrement dit, est-ce qu&amp;rsquo;une position donnée
+est convertie au moins une fois dans la manip.&lt;/p&gt;
+
+&lt;p&gt;Dans la manip d&amp;rsquo;insertion d&amp;rsquo;une cassette de résistance, on s&amp;rsquo;attend à un effet
+de sélection / liaison entre les marqueurs convertis à proximité de la cassette.
+Le BGC pourrait s&amp;rsquo;exercer sur la partie distale du track, l&amp;rsquo;autre partie étant
+liée à la cassette, la conversion est soumise uniquement à la sélection.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chez &lt;em&gt;Acinetobacter&lt;/em&gt;&lt;/strong&gt;, on pourrait mettre en place le même type de protocole.
+Ça nous donnerait une idée globale des paramètres de la recombinaison chez
+&lt;em&gt;Acinetobacter baylyi&lt;/em&gt; — de la même façon qu&amp;rsquo;ils l&amp;rsquo;ont fait chez &lt;em&gt;H.pylori.&lt;/em&gt;, et
+permettrait de tester globalement l&amp;rsquo;hypothèse BGC chez &lt;em&gt;Acinetobacter&lt;/em&gt;. Il faut
+pour cela qu&amp;rsquo;on trouve une souche suffisamment divergente de notre &lt;em&gt;A.baylyi.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pour le troisième modèle&lt;/strong&gt;, on s&amp;rsquo;est accordé sur le choix de &lt;em&gt;Bacillus
+subtilis&lt;/em&gt;. C&amp;rsquo;est une bactérie naturellement compétente, dans la même gamme de
+GC% qu&amp;rsquo;&lt;em&gt;Acinetobacter&lt;/em&gt; mais éloignée phylogénétiquement d&amp;rsquo;&lt;em&gt;Acinetobacter&lt;/em&gt; et
+d&amp;rsquo;&lt;em&gt;E.coli&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Enfin, on a discuté rapidement du choix potentiel d&amp;rsquo;une archée qu&amp;rsquo;on pourrait
+transformer ou du moins manipuler génétiquement. Il existe au moins deux archées
+mésophiles chez qui on pourrait faire quelque chose : &lt;em&gt;Methanosarcina
+acetivorans&lt;/em&gt; et &lt;em&gt;Methanococcus maripaludis&lt;/em&gt;. La culture se fait en anaérobiose
+pure par contre. Philippe Oger du MAP / CIRI / INSA a publié un bon nombre de
+papiers sur la manipulation génétique des archées hyperthermophiles. On ira
+discuter avec lui.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Compte rendu réunion projet</title>

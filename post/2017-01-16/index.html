@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="tablesaw-enhanced" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+    <title>Lab notebook - Archæa, Helicobacter, Bacillus, E.coli &amp; consorts</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Lab notebook">
+<meta name="generator" content="Hugo 0.18.1" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/envisioned.css">
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/tablesaw-stackonly.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/nudge.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/hugo-envisioned.css">
+
+</head>
+
+
+<body>
+    <div id="layout">
+        <article>
+            <header class="brand">
+    <h1>Lab notebook</h1>
+    <h2>Samuel Barreto</h2>
+    <div class="menu-btn">+</div>
+    <nav class="pushy pushy-left">
+    <ul>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/"><i class='fa fa-home fa-lg'></i> Récents</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/post"><i class='fa fa-book fa-lg'></i> Par date</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/categories"><i class='fa fa-tags fa-lg'></i> Catégories</a></li>
+        
+    </ul>
+</nav>
+<div class="site-overlay"></div>
+
+</header>
+
+            
+<h1>
+    
+    <a href="https://sam217pa.github.io/lab-notebook/post/2017-01-16/">Archæa, Helicobacter, Bacillus, E.coli &amp; consorts</a>
+    
+</h1>
+
+
+<span class="content-meta">
+    
+    <i class="fa fa-user">&nbsp;</i><span class="author">
+        &nbsp;Samuel Barreto</span> <br>
+    
+
+
+    
+    <i class="fa fa-calendar"></i>
+    &nbsp;Jan 16, 2017
+    
+
+    
+    &nbsp;<i class="fa fa-clock-o"></i>
+    &nbsp;5 min read
+    
+
+    
+</span>
+
+
+
+
+            
+
+            <section><p>Ordre du jour : discuter de l&rsquo;avancement des manips sur le modèle <em>E.coli</em>, des
+analyses des données de <em>H.pylori</em> et choisir le troisième modèle.</p>
+
+<p></p>
+
+<p><strong>Chez <em>E.coli</em></strong>, on a réussi par conjugaison à obtenir un nombre de clones
+satisfaisant, similaire à celui obtenu chez <em>Acinetobacter</em>. Donc à priori la
+stratégie qu&rsquo;on utilise permet d&rsquo;obtenir le nombre de transformant qui nous
+intéresse, et on peut reconstruire l&rsquo;ensemble de l&rsquo;hétéroduplex.</p>
+
+<p>L&rsquo;ennui c&rsquo;est qu&rsquo;on obtient davantage de transformants en utilisant un plasmide
+vide (sans région homologue au génome receveur).</p>
+
+<p>En fait la majorité du plasmide pKNOCK-Km qu&rsquo;on utilise a une région homologue
+au génome receveur. Donc on va tester avec un plasmide pKNOCK-Tet, qui introduit
+une résistance à la tétracycline au lieu de la kanamycine, et qui ne présente
+qu&rsquo;une homologie de 300bp.</p>
+
+<p>Si on obtient des transformants avec ce simple plasmide (sans insert), on doit
+changer de stratégie. Sinon, on peut repartir sur la stratégie de base avec une
+insertion simple.</p>
+
+<p><strong>Chez <em>H.pylori</em></strong>, on dispose désormais de la table suivante :</p>
+
+<pre><code>&gt; df
+# A tibble: 4,329,658 × 11
+     pos                    id   ref   alt filter receiver donor sample    gt      exp  type
+   &lt;int&gt;                 &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;    &lt;int&gt; &lt;int&gt;  &lt;chr&gt; &lt;int&gt;    &lt;chr&gt; &lt;chr&gt;
+1    346 TAGGGTTTTG.CGTGGGCGTG     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+2    439 TTAAATGCGG.CTCGATGAGG     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+3    448 GCTCGATGAG.GGCGTCAATT     G     A   PASS        0     1   FLKJ     0 BAC555-8   bac
+4    457 GGGCGTCAAT.TTCATTGATT     T     C   PASS        0     1   FLKJ     0 BAC555-8   bac
+5    508 CGAAAGCGAG.TTGGTTGTTT     T     C   PASS        0     1   FLKJ     0 BAC555-8   bac
+6    544 CTAACATGCT.AGAAGCGATT     A     G   PASS        0     1   FLKJ     0 BAC555-8   bac
+7    639 GCCATTTTAA.CCCTTGAGAG     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+8    665 ACAAGCTCAA.CAATTCAATG     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+9    704 AGCCCTTATT.GCCGGCTTTA     G     A   PASS        0     1   FLKJ     0 BAC555-8   bac
+10   749 CAATATTGTC.CGTGGTCAGC     C     T   PASS        0     1   FLKJ     0 BAC555-8   bac
+# ... with 4,329,648 more rows
+</code></pre>
+
+<p>Une sorte d&rsquo;alignement en colonne clone par clone. La colonne <code>ref</code> indique
+l&rsquo;allèle sur la séquence receveuse, la colonne <code>alt</code> indique l&rsquo;allèle
+alternatif, présent dans au moins une des séquences. Dans la grande majorité des
+cas, elle correspond à l&rsquo;allèle présent chez le <code>donor</code> (dont le génotype est
+<code>1</code>). La colonne <code>gt</code> indique le genotype de la souche à la position considérée.
+Il est <code>0</code> quand l&rsquo;allèle est le même que la souche receveuse, <code>1</code> quand il est
+différent ou <code>2</code> si deux allèles alternatifs existent à un site donné.</p>
+
+<p>Ça nous a permis de déterminer manip par manip le nombre de marqueurs AT
+convertis en GC, le nombre de marqueurs GC convertis en AT, le nombre de
+marqueurs AT opposés à des GC mais qui restent AT (conservés) et le nombre de
+marqueurs GC opposés à des AT conservés.</p>
+
+<pre><code>## $tc1
+##               AT     GC
+## conserved 662129 592445
+## converted  23924  21163
+##
+## tc1 chi.square test p.value :
+## [1] 0.2361069
+
+## $tc2
+##               AT     GC
+## conserved 396172 354254
+## converted  15468  13871
+##
+## tc2 chi.square test p.value :
+## [1] 0.8149272
+
+## $tc3
+##               AT     GC
+## conserved 198505 177380
+## converted   7330   6712
+##
+## tc3 chi.square test p.value :
+## [1] 0.1579967
+
+## $stt
+##               AT     GC
+## conserved 717893 642114
+## converted   2982   2540
+##
+## stt chi.square test p.value :
+## [1] 0.07294647
+</code></pre>
+
+<p>Nulle part on n&rsquo;obtient de signal significatif.</p>
+
+<p>Chez la levure cependant, le signal de BGC est beaucoup plus fort aux extrémités
+des tracks de conversion. Donc il reste à déterminer la position des marqueurs
+dans la région de conversion (distale, centrale). Ça nous permettrait d&rsquo;avoir
+une idée des paramètres de recombinaison et de comparer avec les valeurs
+publiées dans le papier.</p>
+
+<p>Il faut également discriminer les évènements non-indépendants dans les manips de
+transformation répétée. On ne compte les marqueurs convertis dans plusieurs
+souches différentes qu&rsquo;une fois. Autrement dit, est-ce qu&rsquo;une position donnée
+est convertie au moins une fois dans la manip.</p>
+
+<p>Dans la manip d&rsquo;insertion d&rsquo;une cassette de résistance, on s&rsquo;attend à un effet
+de sélection / liaison entre les marqueurs convertis à proximité de la cassette.
+Le BGC pourrait s&rsquo;exercer sur la partie distale du track, l&rsquo;autre partie étant
+liée à la cassette, la conversion est soumise uniquement à la sélection.</p>
+
+<p><strong>Chez <em>Acinetobacter</em></strong>, on pourrait mettre en place le même type de protocole.
+Ça nous donnerait une idée globale des paramètres de la recombinaison chez
+<em>Acinetobacter baylyi</em> — de la même façon qu&rsquo;ils l&rsquo;ont fait chez <em>H.pylori.</em>, et
+permettrait de tester globalement l&rsquo;hypothèse BGC chez <em>Acinetobacter</em>. Il faut
+pour cela qu&rsquo;on trouve une souche suffisamment divergente de notre <em>A.baylyi.</em></p>
+
+<p><strong>Pour le troisième modèle</strong>, on s&rsquo;est accordé sur le choix de <em>Bacillus
+subtilis</em>. C&rsquo;est une bactérie naturellement compétente, dans la même gamme de
+GC% qu&rsquo;<em>Acinetobacter</em> mais éloignée phylogénétiquement d&rsquo;<em>Acinetobacter</em> et
+d&rsquo;<em>E.coli</em>.</p>
+
+<p>Enfin, on a discuté rapidement du choix potentiel d&rsquo;une archée qu&rsquo;on pourrait
+transformer ou du moins manipuler génétiquement. Il existe au moins deux archées
+mésophiles chez qui on pourrait faire quelque chose : <em>Methanosarcina
+acetivorans</em> et <em>Methanococcus maripaludis</em>. La culture se fait en anaérobiose
+pure par contre. Philippe Oger du MAP / CIRI / INSA a publié un bon nombre de
+papiers sur la manipulation génétique des archées hyperthermophiles. On ira
+discuter avec lui.</p></section>
+            <section>
+                
+
+                <footer class="footer">
+		<hr>
+		<ul class="page-footer-menu">
+		    
+		</ul>
+
+    
+
+	  <div class="copyright">
+	      <p>
+            
+            &copy; 2017
+            Samuel Barreto.
+            
+        </p>
+    </div>
+</footer>
+
+
+<script src="https://sam217pa.github.io/lab-notebook/js/jquery.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/tablesaw-stackonly.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/nudge.min.js"></script> 
+
+            </section>
+        </article>
+    </div>
+</body>
+</html>

@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sam217pa.github.io/lab-notebook/</loc>
-    <lastmod>2016-12-06T13:15:07+01:00</lastmod>
+    <loc>https://sam217pa.github.io/lab-notebook/post/2017-01-16/</loc>
+    <lastmod>2017-01-16T18:47:29+01:00</lastmod>
   </url>
   
   <url>
@@ -39,6 +39,59 @@
   <url>
     <loc>https://sam217pa.github.io/lab-notebook/post/2016-10-03/</loc>
     <lastmod>2016-10-03T01:30:04+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/categories/approches/</loc>
+    <lastmod>2016-10-04T17:55:08+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/categories/bilan/</loc>
+    <lastmod>2016-10-07T16:07:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/categories/bubendorfer/</loc>
+    <lastmod>2016-11-02T13:41:04+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/categories/compte-rendu/</loc>
+    <lastmod>2016-11-02T13:41:04+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/</loc>
+    <lastmod>2017-01-16T18:47:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/categories/meta/</loc>
+    <lastmod>2016-11-02T13:41:04+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/post/</loc>
+    <lastmod>2017-01-16T18:47:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sam217pa.github.io/lab-notebook/categories/reunion/</loc>
+    <lastmod>2016-11-02T13:41:04+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
