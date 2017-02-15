@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="tablesaw-enhanced" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+    <title>Lab notebook - Réunion projet : génomes entiers &amp; locus cibles …</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Lab notebook">
+<meta name="generator" content="Hugo 0.18.1" />
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/envisioned.css">
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/tablesaw-stackonly.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/nudge.css"/>
+<link rel="stylesheet" href="https://sam217pa.github.io/lab-notebook/css/hugo-envisioned.css">
+
+</head>
+
+
+<body>
+    <div id="layout">
+        <article>
+            <header class="brand">
+    <h1>Lab notebook</h1>
+    <h2>Samuel Barreto</h2>
+    <div class="menu-btn">+</div>
+    <nav class="pushy pushy-left">
+    <ul>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/"><i class='fa fa-home fa-lg'></i> Récents</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/post"><i class='fa fa-book fa-lg'></i> Par date</a></li>
+        
+        <li><a href="https://sam217pa.github.io/lab-notebook/categories"><i class='fa fa-tags fa-lg'></i> Catégories</a></li>
+        
+    </ul>
+</nav>
+<div class="site-overlay"></div>
+
+</header>
+
+            
+<h1>
+    
+    <a href="https://sam217pa.github.io/lab-notebook/post/2017-02-14/">Réunion projet : génomes entiers &amp; locus cibles …</a>
+    
+</h1>
+
+
+<span class="content-meta">
+    
+    <i class="fa fa-user">&nbsp;</i><span class="author">
+        &nbsp;Samuel Barreto</span> <br>
+    
+
+
+    
+    <i class="fa fa-calendar"></i>
+    &nbsp;Feb 14, 2017
+    
+
+    
+    &nbsp;<i class="fa fa-clock-o"></i>
+    &nbsp;3 min read
+    
+
+    
+</span>
+
+
+
+
+            
+
+            <section><p>Ordre du jour : discuter de l&rsquo;avancée des travaux sur <em>H.pylori</em>, sur
+<em>P.furiosus</em>, et prévoir la suite des manips chez <em>A.baylyi</em>.</p>
+
+<p></p>
+
+<h2 id="transformations-pyrococcales">Transformations pyrococcales …</h2>
+
+<p>Les travaux de <em>N.Guschinskaya et al <label for="error: cannot access positional params by string name" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="error: cannot access positional params by string name" class="margin-toggle"/>
+<span class="sidenote">Guschinskaya N, Brunel R, Tourte M, Lipscomb GL, Adams MWW, Oger P, Charpentier X. 2016. Random mutagenesis of the hyperthermophilic archaeon Pyrococcus furiosus using in vitro mariner transposition and natural transformation. Scientific Reports 6:36711.</span> 
+</em> ont montré qu&rsquo;il était possible de transformer la pyrococcale <em>Pyrococcus furiosus</em> par des produits PCR dans l&rsquo;idée de ceux qu&rsquo;on utilise chez <em>Acinetobacter baylyi</em>, avec une succession :</p>
+
+<pre><code>[cible] - [marqueur de sélection] - [ancre]
+</code></pre>
+
+<p>Chez <em>Pf</em>, le marqueur de sélection utilisé est le gène <em>pyrF</em>, impliqué dans le
+métabolisme de l&rsquo;uracile. La souche utilisée est <em>pyrF⁻</em>. Elle ne pousse sur
+milieu sans uracile que si la cassette porteuse de <em>pyrF</em> est intégrée.</p>
+
+<p>Ils ont testé de transformer la souche par des constructions avec 500, 1000,
+2000 et 3000 bp en amont et en aval du marqueur de sélection. Pour nos manips,
+on a besoin que la région en amont soit plus courte que 500 bp. On a donc testé
+des transformations avec une construction amplifiée avec les amorces judicieuses
+à partir de la construction 3000 - 3000.</p>
+
+<pre><code>| longueur aval |     # UFC    |
+|---------------+--------------|
+|           500 |          190 |
+|          1000 |         &gt;300 |
+|          3000 |         &gt;300 |
+</code></pre>
+
+<p>En étalant 30 µL seulement, on a plus de 300 transformants, donc on peut espérer
+10⁵ clones au moins. Cependant le locus donneur est 100% identique au receveur.</p>
+
+<p>On veut donc changer la région en amont du marqueur de sélection par une matrice
+amplifiée à partir d&rsquo;une autre pyrococcale qui introduirait de la divergence
+avec le locus cible, pour voir si on peut obtenir le même nombre de
+tranformants. Le but est de voir si on peut utiliser notre approche classique
+d&rsquo;introduction de marqueurs W et S dans une séquence hétérologue qui servirait
+de matrice à la réparation des cassures.</p>
+
+<h2 id="d-helicobacter-à-acinetobacter">D&rsquo;<em>Helicobacter</em> à <em>Acinetobacter</em> …</h2>
+
+<p>L&rsquo; avancée des analyses montre un excès de conversions de AT vers GC aux extrémités des régions converties dans le modèle <em>H.pylori</em> sur les données réanalysées de <em>Bubendorfer et al<label for="error: cannot access positional params by string name" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="error: cannot access positional params by string name" class="margin-toggle"/>
+<span class="sidenote">Bubendorfer S, Krebes J, Yang I, Hage E, Schulz TF, Bahlawane C, Didelot X, Suerbaum S. 2016. Genome-wide analysis of chromosomal import patterns after natural transformation of Helicobacter pylori. Nat Commun 7:11995.</span> 
+.</em></p>
+
+<p>Il reste à déterminer si les marqueurs suivant les marqueurs en bordure de région converties ont une influence sur la conversion, à classer les évènements en fonction de la nature des deux évènements en bordure, et à comparer la statistique obtenue avec celle du stage de M2.</p>
+
+<p>Ces résultats montrent qu&rsquo;il pourrait exister un biais également chez <em>Acinetobacter</em>, et que la façon de le mesurer semble pertinente. On envisage donc en suivant un protocole adapté de celui de <em>Bubendorfer et al</em> de transformer notre souche de référence par une souche donneuse qui serait divergente à 4%, ce qui introduirait la même divergence que les souches utilisées dans le protocole d&rsquo;<em>Hp</em>.</p>
+
+<p>Deux souches sont référéncées sur le NCBI qui répondrait à nos critères et sont en train d&rsquo;être commandées.</p>
+
+<h2 id="et-bacillus">Et <em>Bacillus ?</em></h2>
+
+<p>Les expériences de transformations par le génome complet chez <em>Acinetobacter</em> peuvent également être reproduite chez <em>B.subtilis</em> qui est naturellement compétente à la transformation. La souche de référence a également été commandée.</p></section>
+            <section>
+                
+
+                <footer class="footer">
+		<hr>
+		<ul class="page-footer-menu">
+		    
+		</ul>
+
+    
+
+	  <div class="copyright">
+	      <p>
+            
+            &copy; 2017
+            Samuel Barreto.
+            
+        </p>
+    </div>
+</footer>
+
+
+<script src="https://sam217pa.github.io/lab-notebook/js/jquery.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/tablesaw-stackonly.js"></script>
+<script src="https://sam217pa.github.io/lab-notebook/js/nudge.min.js"></script> 
+
+            </section>
+        </article>
+    </div>
+</body>
+</html>

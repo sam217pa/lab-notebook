@@ -5,8 +5,74 @@
     <link>https://sam217pa.github.io/lab-notebook/post/index.xml</link>
     <description>Recent content in Posts on Lab notebook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Jan 2017 18:47:29 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 14 Feb 2017 15:06:20 +0100</lastBuildDate>
     <atom:link href="https://sam217pa.github.io/lab-notebook/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Réunion projet : génomes entiers &amp; locus cibles …</title>
+      <link>https://sam217pa.github.io/lab-notebook/post/2017-02-14/</link>
+      <pubDate>Tue, 14 Feb 2017 15:06:20 +0100</pubDate>
+      
+      <guid>https://sam217pa.github.io/lab-notebook/post/2017-02-14/</guid>
+      <description>&lt;p&gt;Ordre du jour : discuter de l&amp;rsquo;avancée des travaux sur &lt;em&gt;H.pylori&lt;/em&gt;, sur
+&lt;em&gt;P.furiosus&lt;/em&gt;, et prévoir la suite des manips chez &lt;em&gt;A.baylyi&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;transformations-pyrococcales&#34;&gt;Transformations pyrococcales …&lt;/h2&gt;
+
+&lt;p&gt;Les travaux de &lt;em&gt;N.Guschinskaya et al &lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;Guschinskaya N, Brunel R, Tourte M, Lipscomb GL, Adams MWW, Oger P, Charpentier X. 2016. Random mutagenesis of the hyperthermophilic archaeon Pyrococcus furiosus using in vitro mariner transposition and natural transformation. Scientific Reports 6:36711.&lt;/span&gt; 
+&lt;/em&gt; ont montré qu&amp;rsquo;il était possible de transformer la pyrococcale &lt;em&gt;Pyrococcus furiosus&lt;/em&gt; par des produits PCR dans l&amp;rsquo;idée de ceux qu&amp;rsquo;on utilise chez &lt;em&gt;Acinetobacter baylyi&lt;/em&gt;, avec une succession :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[cible] - [marqueur de sélection] - [ancre]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Chez &lt;em&gt;Pf&lt;/em&gt;, le marqueur de sélection utilisé est le gène &lt;em&gt;pyrF&lt;/em&gt;, impliqué dans le
+métabolisme de l&amp;rsquo;uracile. La souche utilisée est &lt;em&gt;pyrF⁻&lt;/em&gt;. Elle ne pousse sur
+milieu sans uracile que si la cassette porteuse de &lt;em&gt;pyrF&lt;/em&gt; est intégrée.&lt;/p&gt;
+
+&lt;p&gt;Ils ont testé de transformer la souche par des constructions avec 500, 1000,
+2000 et 3000 bp en amont et en aval du marqueur de sélection. Pour nos manips,
+on a besoin que la région en amont soit plus courte que 500 bp. On a donc testé
+des transformations avec une construction amplifiée avec les amorces judicieuses
+à partir de la construction 3000 - 3000.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| longueur aval |     # UFC    |
+|---------------+--------------|
+|           500 |          190 |
+|          1000 |         &amp;gt;300 |
+|          3000 |         &amp;gt;300 |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;En étalant 30 µL seulement, on a plus de 300 transformants, donc on peut espérer
+10⁵ clones au moins. Cependant le locus donneur est 100% identique au receveur.&lt;/p&gt;
+
+&lt;p&gt;On veut donc changer la région en amont du marqueur de sélection par une matrice
+amplifiée à partir d&amp;rsquo;une autre pyrococcale qui introduirait de la divergence
+avec le locus cible, pour voir si on peut obtenir le même nombre de
+tranformants. Le but est de voir si on peut utiliser notre approche classique
+d&amp;rsquo;introduction de marqueurs W et S dans une séquence hétérologue qui servirait
+de matrice à la réparation des cassures.&lt;/p&gt;
+
+&lt;h2 id=&#34;d-helicobacter-à-acinetobacter&#34;&gt;D&amp;rsquo;&lt;em&gt;Helicobacter&lt;/em&gt; à &lt;em&gt;Acinetobacter&lt;/em&gt; …&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo; avancée des analyses montre un excès de conversions de AT vers GC aux extrémités des régions converties dans le modèle &lt;em&gt;H.pylori&lt;/em&gt; sur les données réanalysées de &lt;em&gt;Bubendorfer et al&lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;Bubendorfer S, Krebes J, Yang I, Hage E, Schulz TF, Bahlawane C, Didelot X, Suerbaum S. 2016. Genome-wide analysis of chromosomal import patterns after natural transformation of Helicobacter pylori. Nat Commun 7:11995.&lt;/span&gt; 
+.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Il reste à déterminer si les marqueurs suivant les marqueurs en bordure de région converties ont une influence sur la conversion, à classer les évènements en fonction de la nature des deux évènements en bordure, et à comparer la statistique obtenue avec celle du stage de M2.&lt;/p&gt;
+
+&lt;p&gt;Ces résultats montrent qu&amp;rsquo;il pourrait exister un biais également chez &lt;em&gt;Acinetobacter&lt;/em&gt;, et que la façon de le mesurer semble pertinente. On envisage donc en suivant un protocole adapté de celui de &lt;em&gt;Bubendorfer et al&lt;/em&gt; de transformer notre souche de référence par une souche donneuse qui serait divergente à 4%, ce qui introduirait la même divergence que les souches utilisées dans le protocole d&amp;rsquo;&lt;em&gt;Hp&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Deux souches sont référéncées sur le NCBI qui répondrait à nos critères et sont en train d&amp;rsquo;être commandées.&lt;/p&gt;
+
+&lt;h2 id=&#34;et-bacillus&#34;&gt;Et &lt;em&gt;Bacillus ?&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Les expériences de transformations par le génome complet chez &lt;em&gt;Acinetobacter&lt;/em&gt; peuvent également être reproduite chez &lt;em&gt;B.subtilis&lt;/em&gt; qui est naturellement compétente à la transformation. La souche de référence a également été commandée.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Archæa, Helicobacter, Bacillus, E.coli &amp; consorts</title>
