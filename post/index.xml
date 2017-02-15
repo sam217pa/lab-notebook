@@ -71,7 +71,16 @@ de matrice à la réparation des cassures.&lt;/p&gt;
 
 &lt;h2 id=&#34;et-bacillus&#34;&gt;Et &lt;em&gt;Bacillus ?&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;Les expériences de transformations par le génome complet chez &lt;em&gt;Acinetobacter&lt;/em&gt; peuvent également être reproduite chez &lt;em&gt;B.subtilis&lt;/em&gt; qui est naturellement compétente à la transformation. La souche de référence a également été commandée.&lt;/p&gt;</description>
+&lt;p&gt;Les expériences de transformations par le génome complet chez &lt;em&gt;Acinetobacter&lt;/em&gt; peuvent également être reproduite chez &lt;em&gt;B.subtilis&lt;/em&gt; qui est naturellement compétente à la transformation. La souche de référence a également été commandée.&lt;/p&gt;
+
+&lt;h2 id=&#34;acinetobacter-méthodes-locus-ciblées&#34;&gt;Acinetobacter, méthodes locus-ciblées&lt;/h2&gt;
+
+&lt;p&gt;Chez &lt;em&gt;Acinetobacter,&lt;/em&gt; on dispose des données de séquençage d&amp;rsquo;amplicon, envoyées en novembre dernier. Cette manip&amp;rsquo; pilote devait pouvoir nous informer sur la faisabilité du projet, la qualité des séquences à laquelle on pouvait s&amp;rsquo;attendre et donner quelques informations préliminaires sur la nature du biais observé.&lt;/p&gt;
+
+&lt;p&gt;La priorité suivante est d&amp;rsquo;assembler les lectures appariées et de déterminer 1) le taux de mutation / erreur de séquençage auquel on doit s&amp;rsquo;attendre &lt;em&gt;via&lt;/em&gt; les résultats du séquençage de la partie ancre non divergente ; 2) le nombre de lectures dont le dernier marqueur converti est un G ou C &lt;em&gt;vs&lt;/em&gt; le nombre de lecture dont le dernier marqueur converti est un A ou T au sein des manips alternant W et S ; 3) la comparaison du nombre de lectures qui indiquent un point de bascule à un marqueur donné entre les manip WS et SW &lt;label for=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;error: cannot access positional params by string name&#34; class=&#34;margin-toggle&#34;/&gt;
+&lt;span class=&#34;sidenote&#34;&gt;on s&amp;rsquo;attend à ce qu&amp;rsquo;il y ait plus de switch quand le marqueur est S que quand le marqueur est W.&lt;/span&gt; 
+.&lt;/p&gt;</description>
     </item>
     
     <item>
